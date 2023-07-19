@@ -6,6 +6,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { SupportGridComponent } from './support-grid.component';
 import { CommonModule } from '@angular/common';
+import { FooterComponent } from './footer.component';
 
 @Component({
   selector: 'app-root',
@@ -30,6 +31,8 @@ import { CommonModule } from '@angular/common';
       <app-support-table *ngIf="showType === 'table'"></app-support-table>
       <app-support-grid *ngIf="showType === 'grid'"></app-support-grid>
     </div>
+
+    <app-footer></app-footer>
   `,
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -41,6 +44,7 @@ import { CommonModule } from '@angular/common';
     SupportGridComponent,
     MatButtonToggleModule,
     MatIconModule,
+    FooterComponent,
   ],
 })
 export class AppComponent {
