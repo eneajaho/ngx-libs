@@ -75,25 +75,29 @@ import { StateService } from './state.service';
         >
           <th mat-header-cell *matHeaderCellDef>v{{ version }}</th>
           <td mat-cell *matCellDef="let row">
-            {{ row.versionSupport[version].libraryVerion }}
-            <ng-container *ngIf="row.versionSupport[version].support === true">
+            <ng-container *ngIf="row.versionSupport[version]?.support === true">
               <a
-                mat-button
-                color="primary"
-                [href]="row.versionSupport[version].link"
+                mat-flat-button
+                [href]="row.versionSupport[version]?.link"
                 target="_blank"
               >
                 ✅
-                {{ row.versionSupport[version].libraryVersion }}
+                {{ row.versionSupport[version]?.libraryVersion }}
               </a>
             </ng-container>
-            <ng-container *ngIf="row.versionSupport[version].support === false">
+            <ng-container
+              *ngIf="row.versionSupport[version]?.support === false"
+            >
               ❌ Not Supported
             </ng-container>
             <ng-container
-              *ngIf="row.versionSupport[version].support === 'progress'"
+              *ngIf="row.versionSupport[version]?.support === 'progress'"
             >
               ⏳ In Progress
+            </ng-container>
+
+            <ng-container *ngIf="row.versionSupport[version] === undefined">
+              ⚠️ Not Checked
             </ng-container>
           </td>
         </ng-container>
