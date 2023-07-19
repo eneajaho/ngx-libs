@@ -70,4 +70,68 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: '@ctrl/ngx-emoji-mart',
+    npmUrl: 'https://www.npmjs.com/package/@ctrl/ngx-emoji-mart',
+    githubUrl: 'https://github.com/scttcper/ngx-emoji-mart',
+    versionSupport: {
+      '16': {
+        libraryVersion: '9.0.0',
+        support: true,
+        link: 'https://github.com/scttcper/ngx-emoji-mart/releases/tag/v9.0.0',
+      },
+      '15': {
+        libraryVersion: '8.0.0',
+        support: true,
+        link: 'https://github.com/scttcper/ngx-emoji-mart/releases/tag/v8.0.0',
+      },
+      '14': {
+        libraryVersion: '7.0.0',
+        support: true,
+        link: 'https://github.com/scttcper/ngx-emoji-mart/releases/tag/v7.0.0',
+      },
+      '13': {
+        libraryVersion: '6.1.0',
+        support: true,
+        link: 'https://github.com/scttcper/ngx-emoji-mart/releases/tag/v6.1.0',
+      },
+      '12': {
+        libraryVersion: '6.0.0',
+        support: true,
+        link: 'https://github.com/scttcper/ngx-emoji-mart/releases/tag/v6.0.0',
+      },
+    },
+  },
+  {
+    name: '@ng-matero/extensions',
+    npmUrl: 'https://www.npmjs.com/package/@ng-matero/extensions',
+    githubUrl: 'https://github.com/ng-matero/extensions',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.0.0',
+        support: true,
+        link: 'https://github.com/ng-matero/extensions/releases/tag/v16.0.0',
+      },
+      '15': {
+        libraryVersion: '15.0.0',
+        support: true,
+        link: 'https://github.com/ng-matero/extensions/releases/tag/v15.0.0',
+      },
+      '14': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: 'https://github.com/ng-matero/extensions/releases/tag/v14.0.0',
+      },
+      '13': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/ng-matero/extensions/releases/tag/v13.0.0',
+      },
+      '12': {
+        libraryVersion: '12.0.0',
+        support: true,
+        link: 'https://github.com/ng-matero/extensions/releases/tag/v12.0.0',
+      },
+    },
+  },
 ];
