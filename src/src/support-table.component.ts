@@ -1,46 +1,38 @@
-import { Component, ChangeDetectionStrategy, ViewChild } from '@angular/core';
-import { LibrarySupport } from './lib-support.interface';
-import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
-import { MatSort, MatSortModule } from '@angular/material/sort';
-import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { LIBRARY_SUPPORT_DATA } from './libs.data';
 import { CommonModule } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  inject,
+} from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
-import { ReplaceStringPipe } from './replace-string.pipe';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+import { ReplaceStringPipe } from './replace-string.pipe';
+import { StateService } from './state.service';
 
 @Component({
   selector: 'app-support-table',
   template: `
-    <mat-form-field>
-      <mat-label>Filter</mat-label>
-      <input
-        matInput
-        (keyup)="applyFilter($event)"
-        placeholder="Ex. Mia"
-        #input
-      />
-    </mat-form-field>
-
     <div class="mat-elevation-z8">
-      <table mat-table [dataSource]="dataSource" matSort>
+      <table mat-table [dataSource]="state.filteredData()">
         <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+          <th mat-header-cell *matHeaderCellDef>Name</th>
           <td mat-cell *matCellDef="let row">
-            <b style="font-size: 18px">{{ row.name }}</b>
+            <b style="font-size: 16px">{{ row.name }}</b>
           </td>
         </ng-container>
         <ng-container matColumnDef="githubUrl">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>
-            <img
-              src="assets/github.svg"
-              width="25"
-              style="margin-right: 5px;"
-              alt="Github link"
-            />
-            Github
+          <th mat-header-cell *matHeaderCellDef>
+            <div style="display: flex; align-items: center;">
+              <img
+                src="assets/github.svg"
+                width="25"
+                style="margin-right: 5px;"
+                alt="Github link"
+              />
+              <span> Github</span>
+            </div>
           </th>
           <td mat-cell *matCellDef="let row">
             <a
@@ -55,14 +47,16 @@ import { MatIconModule } from '@angular/material/icon';
           </td>
         </ng-container>
         <ng-container matColumnDef="npmUrl">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>
-            <img
-              src="assets/npm.png"
-              width="30"
-              style="margin-right: 5px;"
-              alt="Npm link"
-            />
-            Npm
+          <th mat-header-cell *matHeaderCellDef>
+            <div style="display: flex; align-items: center;">
+              <img
+                src="assets/npm.png"
+                width="30"
+                style="margin-right: 5px;"
+                alt="Npm link"
+              />
+              <span>Npm</span>
+            </div>
           </th>
           <td mat-cell *matCellDef="let row">
             <a mat-button color="primary" [href]="row.npmUrl" target="_blank">
@@ -76,15 +70,13 @@ import { MatIconModule } from '@angular/material/icon';
         </ng-container>
 
         <ng-container
-          *ngFor="let version of angularVersions"
+          *ngFor="let version of state.allAngularVersions"
           [matColumnDef]="version"
         >
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>
-            v{{ version }}
-          </th>
+          <th mat-header-cell *matHeaderCellDef>v{{ version }}</th>
           <td mat-cell *matCellDef="let row">
             {{ row.versionSupport[version].libraryVerion }}
-            <ng-container *ngIf="row.versionSupport[version].support">
+            <ng-container *ngIf="row.versionSupport[version].support === true">
               <a
                 mat-button
                 color="primary"
@@ -96,87 +88,35 @@ import { MatIconModule } from '@angular/material/icon';
               </a>
             </ng-container>
             <ng-container *ngIf="row.versionSupport[version].support === false">
-              ❌
+              ❌ Not Supported
             </ng-container>
             <ng-container
               *ngIf="row.versionSupport[version].support === 'progress'"
             >
-              ⏳
+              ⏳ In Progress
             </ng-container>
           </td>
         </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-
-        <!-- Row shown when there is no matching data. -->
-        <tr class="mat-row" *matNoDataRow>
-          <td class="mat-cell" colspan="4">
-            No data matching the filter "{{ input.value }}"
-          </td>
-        </tr>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns()"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns()"></tr>
       </table>
-
-      <mat-paginator
-        [pageSizeOptions]="[5, 10, 25, 100]"
-        aria-label="Select page of users"
-      ></mat-paginator>
     </div>
   `,
   standalone: true,
   imports: [
     CommonModule,
-    MatFormFieldModule,
     MatButtonModule,
-    MatInputModule,
     MatTableModule,
     MatIconModule,
-    MatSortModule,
-    MatPaginatorModule,
     ReplaceStringPipe,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SupportTableComponent {
-  displayedColumns: string[] = [];
-  dataSource = new MatTableDataSource(LIBRARY_SUPPORT_DATA);
+  state = inject(StateService);
 
-  angularVersions =
-    getAllAngularVersionsFromLibrarySupportData(LIBRARY_SUPPORT_DATA);
-
-  constructor() {
-    this.displayedColumns = [
-      'name',
-      'npmUrl',
-      'githubUrl',
-      ...this.angularVersions,
-    ];
-  }
-
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
-  @ViewChild(MatSort) sort!: MatSort;
-
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
-  }
-
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
-
-    if (this.dataSource.paginator) {
-      this.dataSource.paginator.firstPage();
-    }
-  }
-}
-
-function getAllAngularVersionsFromLibrarySupportData(data: LibrarySupport[]) {
-  const angularVersions = data.map((x) => Object.keys(x.versionSupport));
-
-  return angularVersions
-    .flat() // flatten array
-    .map((version) => +version) // convert to number
-    .sort((a, b) => b - a) // sort descending
-    .map((x) => x.toString()); // convert back to string
+  displayedColumns = computed(() => {
+    return ['name', 'npmUrl', 'githubUrl', ...this.state.versionsToShow()];
+  });
 }

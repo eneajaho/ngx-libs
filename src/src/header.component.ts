@@ -1,7 +1,7 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @Component({
   selector: 'app-header',
@@ -33,7 +33,6 @@ import { MatIconModule } from '@angular/material/icon';
     </mat-toolbar>
   `,
   standalone: true,
-  imports: [MatToolbarModule, MatButtonModule, MatIconModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   styles: [
     `
@@ -42,5 +41,6 @@ import { MatIconModule } from '@angular/material/icon';
       }
     `,
   ],
+  imports: [MatToolbarModule, MatButtonModule, MatIconModule],
 })
 export class HeaderComponent {}
