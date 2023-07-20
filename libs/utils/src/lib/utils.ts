@@ -1,4 +1,4 @@
-import { LibrarySupport } from './lib-support.interface';
+import { LibrarySupport } from '@models';
 
 export function getAllAngularVersionsFromLibrarySupportData(
   data: LibrarySupport[],

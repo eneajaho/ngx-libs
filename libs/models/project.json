@@ -1,0 +1,40 @@
+{
+  "name": "libs-models",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/models/src",
+  "prefix": "lib",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": [
+        "{workspaceRoot}/dist/{projectRoot}"
+      ],
+      "options": {
+        "project": "libs/models/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/models/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/models/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/models/**/*.ts",
+          "libs/models/**/*.html"
+        ]
+      }
+    }
+  }
+}

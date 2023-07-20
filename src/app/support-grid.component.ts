@@ -9,7 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { LibraryAngularVersionSupport } from './lib-support.interface';
+import { LibraryAngularVersionSupport } from '@models';
 import { ReplaceStringPipe } from './replace-string.pipe';
 import { StateService } from './state.service';
 

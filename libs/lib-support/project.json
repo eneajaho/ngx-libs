@@ -1,0 +1,40 @@
+{
+  "name": "libs-lib-support",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/libs/lib-support/src",
+  "prefix": "lib",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": [
+        "{workspaceRoot}/dist/{projectRoot}"
+      ],
+      "options": {
+        "project": "libs/libs/lib-support/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/libs/lib-support/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/libs/lib-support/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/libs/lib-support/**/*.ts",
+          "libs/libs/lib-support/**/*.html"
+        ]
+      }
+    }
+  }
+}
