@@ -40,7 +40,7 @@ import { StateService } from './state.service';
           </mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
-          <table>
+          <table style="width:100%">
             <tr>
               <th>Angular Version</th>
               <th>Support</th>
