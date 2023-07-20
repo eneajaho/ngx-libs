@@ -2,8 +2,7 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
 import { appConfig } from './app/app.config';
 
-// redirect to https://ngx-libs.com if it's not that domain or localhost
-if (location.hostname !== 'ngx-libs.com' && location.hostname !== 'localhost') {
+if (location.hostname === 'ngx-libs.netlify.app') {
   location.href = 'https://ngx-libs.com' + location.pathname;
 }
 

@@ -9,7 +9,7 @@ const ALL_ANGULAR_VERSIONS =
 export class StateService {
   allAngularVersions = ALL_ANGULAR_VERSIONS;
   // select 3 versions by default
-  versionsToShow = signal(ALL_ANGULAR_VERSIONS.slice(0, 3));
+  versionsToShow = signal(ALL_ANGULAR_VERSIONS.slice(0, 5));
 
   searchFilter = signal('');
 
