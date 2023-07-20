@@ -13,9 +13,7 @@ import { debounceTime } from 'rxjs';
 @Component({
   selector: 'app-search',
   template: `
-    <div
-      style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 10px"
-    >
+    <div class="search-container">
       <mat-form-field appearance="outline">
         <mat-label>Library name / slug</mat-label>
         <input
@@ -39,6 +37,26 @@ import { debounceTime } from 'rxjs';
       </mat-form-field>
     </div>
   `,
+  styles: [
+    `
+      .search-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8px;
+      }
+      @media (max-width: 1024px) {
+        .search-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 640px) {
+        .search-container {
+          grid-template-columns: 1fr;
+          grid-gap: 16px;
+        }
+      }
+    `,
+  ],
   standalone: true,
   imports: [
     CommonModule,
