@@ -1,6 +1,6 @@
-import { Injectable, computed, effect, signal } from '@angular/core';
-import { getAllAngularVersionsFromLibrarySupportData } from './utils';
+import { computed, effect, Injectable, signal } from '@angular/core';
 import { LIBRARY_SUPPORT_DATA } from './libs.data';
+import { getAllAngularVersionsFromLibrarySupportData } from './utils';
 
 const ALL_ANGULAR_VERSIONS =
   getAllAngularVersionsFromLibrarySupportData(LIBRARY_SUPPORT_DATA);

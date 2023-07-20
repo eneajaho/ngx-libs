@@ -32,7 +32,7 @@ import { StateService } from './state.service';
                 style="margin-right: 5px;"
                 alt="Github link"
               />
-              <span> Github</span>
+              <span>Github</span>
             </div>
           </th>
           <td mat-cell *matCellDef="let row">
@@ -42,7 +42,7 @@ import { StateService } from './state.service';
               [href]="row.githubUrl"
               target="_blank"
             >
-              {{ row.githubUrl | replaceString : 'https://github.com/' : '' }}
+              {{ row.githubUrl | replaceString: 'https://github.com/' : '' }}
               <mat-icon>link</mat-icon>
             </a>
           </td>
@@ -63,7 +63,7 @@ import { StateService } from './state.service';
             <a mat-button color="primary" [href]="row.npmUrl" target="_blank">
               {{
                 row.npmUrl
-                  | replaceString : 'https://www.npmjs.com/package/' : ''
+                  | replaceString: 'https://www.npmjs.com/package/' : ''
               }}
               <mat-icon>link</mat-icon>
             </a>
