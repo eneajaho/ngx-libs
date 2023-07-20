@@ -1,5 +1,5 @@
+import { readProjectConfiguration, Tree } from '@nx/devkit';
 import { createTreeWithEmptyWorkspace } from '@nx/devkit/testing';
-import { Tree, readProjectConfiguration } from '@nx/devkit';
 
 import { newLibGenerator } from './generator';
 import { NewLibGeneratorSchema } from './schema';

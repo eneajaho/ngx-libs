@@ -2,7 +2,7 @@ import { formatFiles, Tree } from '@nx/devkit';
 import { tsquery } from '@phenomnomnominal/tsquery';
 import { prompt } from 'enquirer';
 import type { LibraryAngularVersionSupport, LibrarySupport } from 'libs/models';
-import { isPropertyAssignment, isStringLiteral } from 'typescript';
+import { isStringLiteral } from 'typescript';
 import type { NewLibGeneratorSchema } from './schema';
 
 type VersionSupportPrompt = Omit<LibraryAngularVersionSupport, 'support'> & {
@@ -24,21 +24,15 @@ export async function newLibGenerator(
 
   const existingLibNameNodes = tsquery.query(
     libDataContent,
-    `PropertyAssignment:has(Identifier[name=name])`
+    'PropertyAssignment:has(Identifier[name=name]) > StringLiteral'
   );
-  const exist = existingLibNameNodes.some((node) => {
-    if (isPropertyAssignment(node)) {
-      const initializer = node.initializer;
-      if (isStringLiteral(initializer)) {
-        return initializer.text === normalizedOptions.name;
-      }
-    }
-    return false;
-  });
+  const exist = existingLibNameNodes.some(
+    (node) => isStringLiteral(node) && node.text === normalizedOptions.name
+  );
 
   if (exist) {
     console.log(
-      `${normalizedOptions.name} is already existed. Please update ${libDataPath} manually`
+      `${normalizedOptions.name} already exists. Please update ${libDataPath} manually.`
     );
     return;
   }

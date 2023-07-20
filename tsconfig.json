@@ -18,17 +18,10 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ],
+    "lib": ["ES2022", "dom"],
     "paths": {
-      "libs/models": [
-        "libs/models/src/index.ts"
-      ],
-      "plugin": [
-        "plugin/src/index.ts"
-      ]
+      "libs/models": ["libs/models/src/index.ts"],
+      "plugin": ["plugin/src/index.ts"]
     }
   },
   "angularCompilerOptions": {

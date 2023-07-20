@@ -22,12 +22,12 @@ export function assertLibrariesAreAllUnique(data: LibrarySupport[]) {
     const lib = data[i];
 
     const matchingLibraries = data.filter(
-      (x) => x.name === lib.name || x.npmUrl === lib.npmUrl,
+      (x) => x.name === lib.name || x.npmUrl === lib.npmUrl
     );
 
     if (matchingLibraries.length > 1) {
       alert(
-        `Library ${lib.name} is not unique. Found ${matchingLibraries.length} libraries with the same name or npmUrl.`,
+        `Library ${lib.name} is not unique. Found ${matchingLibraries.length} libraries with the same name or npmUrl.`
       );
     }
   }
