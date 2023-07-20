@@ -286,6 +286,11 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
         support: true,
         link: 'https://github.com/valor-software/ngx-bootstrap/releases/tag/v5.0.0',
       },
+      '6': {
+        libraryVersion: '3.0.0',
+        support: true,
+        link: 'https://github.com/valor-software/ngx-bootstrap/releases/tag/v3.0.0',
+      },
     },
   },
 
