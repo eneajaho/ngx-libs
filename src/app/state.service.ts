@@ -43,8 +43,13 @@ export class StateService {
     }
     if (url.searchParams.has('versions')) {
       const maybeCSV = url.searchParams.get('versions') || '';
-      const maybeVersions = maybeCSV.split(',').map(v => v.trim()).filter(Boolean);
-      const versions = maybeVersions.filter((v) => ALL_ANGULAR_VERSIONS.includes(v));
+      const maybeVersions = maybeCSV
+        .split(',')
+        .map((v) => v.trim())
+        .filter(Boolean);
+      const versions = maybeVersions.filter((v) =>
+        ALL_ANGULAR_VERSIONS.includes(v),
+      );
       this.versionsToShow.set(versions);
     }
 
