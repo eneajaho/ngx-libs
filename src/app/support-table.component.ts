@@ -20,7 +20,7 @@ import { StateService } from './state.service';
         <ng-container matColumnDef="name" sticky>
           <th mat-header-cell *matHeaderCellDef>Name</th>
           <td mat-cell *matCellDef="let row">
-              <b style="font-size: 16px">{{ row.name }}</b>
+            <b style="font-size: 16px">{{ row.name }}</b>
           </td>
         </ng-container>
         <ng-container matColumnDef="githubUrl">

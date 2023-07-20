@@ -19,9 +19,7 @@ import { StateService } from './state.service';
     <div class="cards-grid">
       <mat-card *ngFor="let lib of cardData()">
         <mat-card-header>
-          <mat-card-title>
-            {{ lib.name }}
-          </mat-card-title>
+          <mat-card-title>{{ lib.name }}</mat-card-title>
           <mat-card-subtitle>
             <a mat-button color="primary" [href]="lib.npmUrl" target="_blank">
               <img src="assets/npm.png" width="20" alt="Npm link" />
