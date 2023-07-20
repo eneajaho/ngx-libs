@@ -1,14 +1,14 @@
-import { LibrarySupport } from './lib-support.interface';
+import type { LibrarySupport } from 'libs/models';
 
 export function getAllAngularVersionsFromLibrarySupportData(
-  data: LibrarySupport[],
+  data: LibrarySupport[]
 ) {
   assertLibrariesAreAllUnique(data);
 
   const angularVersions = data.map((x) => Object.keys(x.versionSupport));
 
   const uniqueAngularVersions: string[] = Array.from(
-    new Set(angularVersions.flat()),
+    new Set(angularVersions.flat())
   );
 
   return uniqueAngularVersions

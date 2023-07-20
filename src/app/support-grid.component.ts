@@ -9,7 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { LibraryAngularVersionSupport } from './lib-support.interface';
+import type { LibraryAngularVersionSupport } from 'libs/models';
 import { ReplaceStringPipe } from './replace-string.pipe';
 import { StateService } from './state.service';
 
@@ -25,7 +25,7 @@ import { StateService } from './state.service';
               <img src="assets/npm.png" width="20" alt="Npm link" />
               {{
                 lib.npmUrl
-                  | replaceString: 'https://www.npmjs.com/package/' : ''
+                  | replaceString : 'https://www.npmjs.com/package/' : ''
               }}
             </a>
             <a
@@ -35,7 +35,7 @@ import { StateService } from './state.service';
               target="_blank"
             >
               <img src="assets/github.svg" width="12" alt="Github link" />
-              {{ lib.githubUrl | replaceString: 'https://github.com/' : '' }}
+              {{ lib.githubUrl | replaceString : 'https://github.com/' : '' }}
             </a>
           </mat-card-subtitle>
         </mat-card-header>
@@ -125,19 +125,14 @@ export class SupportGridComponent {
 
       const versionSupport = keys
         .sort((a, b) => +b - +a)
-        .reduce(
-          (acc, key) => {
-            if (versionsToShow.includes(key))
-              acc.push({
-                angularVersion: key,
-                ...lib.versionSupport[key],
-              });
-            return acc;
-          },
-          [] as Array<
-            LibraryAngularVersionSupport & { angularVersion: string }
-          >,
-        );
+        .reduce((acc, key) => {
+          if (versionsToShow.includes(key))
+            acc.push({
+              angularVersion: key,
+              ...lib.versionSupport[key],
+            });
+          return acc;
+        }, [] as Array<LibraryAngularVersionSupport & { angularVersion: string }>);
 
       return { ...lib, versionSupport };
     });
