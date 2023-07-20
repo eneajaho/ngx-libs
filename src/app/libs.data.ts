@@ -582,4 +582,95 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: 'ngx-mask',
+    npmUrl: 'https://www.npmjs.com/package/ngx-mask',
+    githubUrl: 'https://github.com/JsDaddy/ngx-mask',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.2.4',
+        support: true,
+        link: 'https://github.com/JsDaddy/ngx-mask/blob/develop/CHANGELOG.md#16242023-07-12'
+      },
+      '15': {
+        libraryVersion: '15.1.5',
+        support: true,
+        link: 'https://github.com/JsDaddy/ngx-mask/blob/develop/CHANGELOG.md#15152023-05-12'
+      },
+      '14': {
+        libraryVersion: '14.2.4',
+        support: true,
+        link: 'https://github.com/JsDaddy/ngx-mask/blob/develop/CHANGELOG.md#14242022-10-27'
+      },
+      '13': {
+        libraryVersion: '13.1.15',
+        support: true,
+        link: 'https://github.com/JsDaddy/ngx-mask/blob/develop/CHANGELOG.md#131152022-05-29'
+      },
+      '12': {
+        libraryVersion: '12.0.0',
+        support: true,
+        link: 'https://github.com/JsDaddy/ngx-mask/blob/develop/CHANGELOG.md#1200-2021-05-19'
+      }
+    }
+  },
+  {
+    name: 'ngx-cookie-service',
+    npmUrl: 'https://www.npmjs.com/package/ngx-cookie-service',
+    githubUrl: 'https://github.com/stevermeister/ngx-cookie-service',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.0.0',
+        support: true,
+        link: 'https://github.com/stevermeister/ngx-cookie-service/releases/tag/v16.0.0'
+      },
+      '15': {
+        libraryVersion: '15.0.0',
+        support: true,
+        link: 'https://github.com/stevermeister/ngx-cookie-service/releases/tag/v15.0.0'
+      },
+      '14': {
+        libraryVersion: '14.0.1',
+        support: true,
+        link: 'https://github.com/stevermeister/ngx-cookie-service/releases/tag/v14.0.1'
+      },
+      '13': {
+        libraryVersion: '13.2.1',
+        support: true,
+        link: 'https://github.com/stevermeister/ngx-cookie-service/releases/tag/v13.2.1'
+      },
+      '12': {
+        libraryVersion: '12.0.3',
+        support: true,
+        link: 'https://github.com/stevermeister/ngx-cookie-service/releases/tag/v12.0.3'
+      }
+    }
+  },
+  {
+    name: 'ngx-infinite-scroll',
+    npmUrl: 'https://www.npmjs.com/package/ngx-infinite-scroll',
+    githubUrl: 'https://github.com/orizens/ngx-infinite-scroll',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.0.0',
+        support: true,
+        link: 'https://github.com/orizens/ngx-infinite-scroll/blob/master/projects/ngx-infinite-scroll/CHANGELOG.md#v-1600-20230515'
+      },
+      '15': {
+        libraryVersion: '15.0.0',
+        support: true,
+        link: 'https://github.com/orizens/ngx-infinite-scroll/blob/master/projects/ngx-infinite-scroll/CHANGELOG.md#v-1500-20220812'
+      },
+      '14': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: 'https://github.com/orizens/ngx-infinite-scroll/blob/master/projects/ngx-infinite-scroll/CHANGELOG.md#v-1400-20220605'
+      },
+      '13': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/orizens/ngx-infinite-scroll/blob/master/projects/ngx-infinite-scroll/CHANGELOG.md#v-1300-20222603'
+      }
+    }
+  }
 ];
