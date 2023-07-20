@@ -396,23 +396,23 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
     versionSupport: {
       '16': {
         libraryVersion: '16.0.0',
-        support: false
+        support: false,
+        link: 'https://github.com/orizens/ngx-infinite-scroll/blob/master/projects/ngx-infinite-scroll/CHANGELOG.md#v-1600-20230515'
       },
       '15': {
         libraryVersion: '15.0.0',
-        support: false
+        support: false,
+        link: 'https://github.com/orizens/ngx-infinite-scroll/blob/master/projects/ngx-infinite-scroll/CHANGELOG.md#v-1500-20220812'
       },
       '14': {
         libraryVersion: '14.0.0',
-        support: true
+        support: true,
+        link: 'https://github.com/orizens/ngx-infinite-scroll/blob/master/projects/ngx-infinite-scroll/CHANGELOG.md#v-1400-20220605'
       },
       '13': {
         libraryVersion: '13.0.0',
-        support: true
-      },
-      '12': {
-        libraryVersion: '12.0.0',
-        support: true
+        support: true,
+        link: 'https://github.com/orizens/ngx-infinite-scroll/blob/master/projects/ngx-infinite-scroll/CHANGELOG.md#v-1300-20222603'
       }
     }
   }
