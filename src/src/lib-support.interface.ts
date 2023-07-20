@@ -11,6 +11,7 @@ export interface LibrarySupport {
 
 export interface LibraryAngularVersionSupport {
   libraryVersion: string; // version of the library (e.g. 17.0.0)
-  support: true | false | 'progress'; // support for the library (e.g. full, partial, none)
+  support: true | false | 'progress' | 'partial'; // support for the library (e.g. true, false, 'progress', 'not breaks')
   link?: string; // link to the library version or release notes
+  note?: string; // note for the library version
 }

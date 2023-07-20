@@ -8,6 +8,7 @@ import {
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { ReplaceStringPipe } from './replace-string.pipe';
 import { StateService } from './state.service';
 
@@ -96,6 +97,19 @@ import { StateService } from './state.service';
               ⏳ In Progress
             </ng-container>
 
+            <ng-container
+              *ngIf="row.versionSupport[version]?.support === 'partial'"
+            >
+              <a
+                mat-flat-button
+                [href]="row.versionSupport[version]?.link"
+                target="_blank"
+                [matTooltip]="row.versionSupport[version]?.note"
+              >
+                🧪 Partial ({{ row.versionSupport[version]?.libraryVersion }})
+              </a>
+            </ng-container>
+
             <ng-container *ngIf="row.versionSupport[version] === undefined">
               ⚠️ Not Checked
             </ng-container>
@@ -135,6 +149,7 @@ import { StateService } from './state.service';
     MatButtonModule,
     MatTableModule,
     MatIconModule,
+    MatTooltipModule,
     ReplaceStringPipe,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,

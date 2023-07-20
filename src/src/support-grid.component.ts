@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { LibraryAngularVersionSupport } from './lib-support.interface';
 import { ReplaceStringPipe } from './replace-string.pipe';
 import { StateService } from './state.service';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-support-grid',
@@ -53,6 +54,9 @@ import { StateService } from './state.service';
                 <ng-container *ngIf="item.support === 'progress'">
                   ⏳
                 </ng-container>
+                <ng-container *ngIf="item.support === 'partial'">
+                  🧪
+                </ng-container>
               </td>
               <td>
                 <a
@@ -65,6 +69,16 @@ import { StateService } from './state.service';
                   <mat-icon>link</mat-icon>
                   {{ item.libraryVersion }}
                 </a>
+                <ng-container *ngIf="item.support === 'partial'">
+                  <a
+                    mat-flat-button
+                    [href]="item.link"
+                    target="_blank"
+                    [matTooltip]="item.note || ''"
+                  >
+                    Partial ({{ item.libraryVersion }})
+                  </a>
+                </ng-container>
                 <ng-container *ngIf="item.support === false">
                   Not supported
                 </ng-container>
@@ -83,6 +97,7 @@ import { StateService } from './state.service';
     CommonModule,
     MatCardModule,
     MatButtonModule,
+    MatTooltipModule,
     MatIconModule,
     ReplaceStringPipe,
   ],
