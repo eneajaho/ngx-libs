@@ -231,7 +231,7 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
-   {
+  {
     name: 'ngx-bootstrap',
     npmUrl: 'https://www.npmjs.com/package/ngx-bootstrap',
     githubUrl: 'https://github.com/valor-software/ngx-bootstrap',
@@ -290,6 +290,147 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
         libraryVersion: '3.0.0',
         support: true,
         link: 'https://github.com/valor-software/ngx-bootstrap/releases/tag/v3.0.0',
+      },
+    },
+  },
+  {
+    name: '@perfectmemory/ngx-contextmenu',
+    npmUrl: 'https://www.npmjs.com/package/@perfectmemory/ngx-contextmenu',
+    githubUrl: 'https://github.com/PerfectMemory/ngx-contextmenu',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.0.1',
+        support: true,
+        link: 'https://github.com/PerfectMemory/ngx-contextmenu/releases/tag/v16.0.1',
+      },
+      '15': {
+        libraryVersion: '15.1.1',
+        support: true,
+        link: 'https://github.com/PerfectMemory/ngx-contextmenu/releases/tag/v15.1.1',
+      },
+      '14': {
+        libraryVersion: '14.1.0',
+        support: true,
+        link: 'https://github.com/PerfectMemory/ngx-contextmenu/releases/tag/v14.1.0',
+      },
+      '13': {
+        libraryVersion: '8.1.0',
+        support: true,
+        link: 'https://github.com/PerfectMemory/ngx-contextmenu/releases/tag/v8.1.0',
+      },
+      '12': {
+        libraryVersion: '6.0.0',
+        support: true,
+        link: 'https://github.com/PerfectMemory/ngx-contextmenu/releases/tag/v6.0.0',
+      },
+    },
+  },
+  {
+    name: '@ngx-formly',
+    npmUrl: 'https://www.npmjs.com/package/@ngx-formly/core',
+    githubUrl: 'https://github.com/ngx-formly/ngx-formly',
+    versionSupport: {
+      '16': {
+        libraryVersion: '6.0.0',
+        support: true,
+        link: 'https://github.com/ngx-formly/ngx-formly/releases/tag/v6.0.0',
+      },
+      '15': {
+        libraryVersion: '6.0.0',
+        support: true,
+        link: 'https://github.com/ngx-formly/ngx-formly/releases/tag/v6.1.0',
+      },
+      '14': {
+        libraryVersion: '6.0.0',
+        support: true,
+        link: 'https://github.com/ngx-formly/ngx-formly/releases/tag/v6.0.0',
+      },
+      '13': {
+        libraryVersion: '6.0.0',
+        support: true,
+        link: 'https://github.com/ngx-formly/ngx-formly/releases/tag/v6.0.0',
+      },
+      '12': {
+        libraryVersion: '5.0.0',
+        support: true,
+        link: 'https://github.com/ngx-formly/ngx-formly/releases/tag/v5.0.0',
+      },
+      '11': {
+        libraryVersion: '5.0.0',
+        support: true,
+        link: 'https://github.com/ngx-formly/ngx-formly/releases/tag/v5.0.0',
+      },
+      '10': {
+        libraryVersion: '5.0.0',
+        support: true,
+        link: 'https://github.com/ngx-formly/ngx-formly/releases/tag/v5.0.0',
+      },
+      '9': {
+        libraryVersion: '5.0.0',
+        support: true,
+        link: 'https://github.com/ngx-formly/ngx-formly/releases/tag/v5.0.0',
+      },
+      '8': {
+        libraryVersion: '5.0.0',
+        support: true,
+        link: 'https://github.com/ngx-formly/ngx-formly/releases/tag/v5.0.0',
+      },
+      '7': {
+        libraryVersion: '5.0.0',
+        support: true,
+        link: 'https://github.com/ngx-formly/ngx-formly/releases/tag/v5.0.0',
+      },
+      '6': {
+        libraryVersion: '4.0.0',
+        support: true,
+        link: 'https://github.com/ngx-formly/ngx-formly/releases/tag/v4.0.0',
+      },
+      '5': {
+        libraryVersion: '3.0.0',
+        support: true,
+        link: 'https://github.com/ngx-formly/ngx-formly/releases/tag/v3.0.0',
+      },
+      '4': {
+        libraryVersion: '2.0.0',
+        support: true,
+        link: 'https://github.com/ngx-formly/ngx-formly/releases/tag/v2.0.0',
+      },
+    },
+  },
+  {
+    name: '@ng-icons/core',
+    npmUrl: 'https://www.npmjs.com/package/@ng-icons/core',
+    githubUrl: 'https://github.com/ng-icons/ng-icons',
+    versionSupport: {
+      '16': {
+        libraryVersion: '25.0.0',
+        support: true,
+        link: 'https://github.com/ng-icons/ng-icons/releases/tag/v25.0.0',
+      },
+      '15': {
+        libraryVersion: '24.0.0',
+        support: true,
+        link: 'https://github.com/ng-icons/ng-icons/releases/tag/v24.0.0',
+      },
+      '14': {
+        libraryVersion: '22.0.0',
+        support: true,
+        link: 'https://github.com/ng-icons/ng-icons/releases/tag/v22.0.0',
+      },
+      '13': {
+        libraryVersion: '17.0.0',
+        support: true,
+        link: 'https://github.com/ng-icons/ng-icons/releases/tag/v17.0.0',
+      },
+      '12': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/ng-icons/ng-icons/releases/tag/v13.1.1',
+      },
+      '11': {
+        libraryVersion: '12.0.0',
+        support: true,
+        link: 'https://github.com/ng-icons/ng-icons/releases/tag/v12.4.0',
       },
     },
   },
@@ -390,5 +531,5 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
     },
   },
 
-  
+
 ];
