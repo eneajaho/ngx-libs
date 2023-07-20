@@ -14,9 +14,9 @@ import { FooterComponent } from './footer.component';
     <app-header></app-header>
 
     <div style="padding: 20px;">
-      <div style="display: grid; grid-template-columns: 3fr 1fr ;">
-        <app-search style="margin: 20px 0"></app-search>
-        <div style="display: flex; justify-content: end; align-items: center">
+      <div class="toolbar-container">
+        <app-search></app-search>
+        <div style="display: flex; justify-content: end; align-items: start">
           <mat-button-toggle-group [(value)]="showType" aria-label="Show type">
             <mat-button-toggle value="grid">
               <mat-icon>apps</mat-icon>
@@ -34,6 +34,22 @@ import { FooterComponent } from './footer.component';
 
     <app-footer></app-footer>
   `,
+  styles: [
+    `
+      .toolbar-container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        margin: 24px 0;
+      }
+      @media (max-width: 640px) {
+        .toolbar-container {
+          grid-template-columns: 1fr;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    `,
+  ],
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [

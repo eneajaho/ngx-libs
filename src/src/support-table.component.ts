@@ -14,9 +14,9 @@ import { StateService } from './state.service';
 @Component({
   selector: 'app-support-table',
   template: `
-    <div class="mat-elevation-z8">
+    <div class="table-container mat-elevation-z8">
       <table mat-table [dataSource]="state.filteredData()">
-        <ng-container matColumnDef="name">
+        <ng-container matColumnDef="name" sticky>
           <th mat-header-cell *matHeaderCellDef>Name</th>
           <td mat-cell *matCellDef="let row">
             <b style="font-size: 16px">{{ row.name }}</b>
@@ -107,6 +107,28 @@ import { StateService } from './state.service';
       </table>
     </div>
   `,
+  styles: [
+    `
+      .table-container {
+        width: 100%;
+        overflow: auto;
+      }
+      td.mat-column-name {
+        width: 20px;
+        padding-right: 8px;
+        background: white;
+        z-index: 10 !important;
+      }
+
+      .mat-mdc-table-sticky-border-elem-right {
+        border-left: 1px solid #e0e0e0;
+      }
+
+      .mat-mdc-table-sticky-border-elem-left {
+        border-right: 1px solid #e0e0e0;
+      }
+    `,
+  ],
   standalone: true,
   imports: [
     CommonModule,
