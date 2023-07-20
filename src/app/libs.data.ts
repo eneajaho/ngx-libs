@@ -508,32 +508,32 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
       '13': {
         libraryVersion: '13.4.1',
-        support: false,
+        support: true,
         link: 'https://github.com/primefaces/primeng/releases/tag/13.4.1'
       },
       '12': {
         libraryVersion: '12.2.2',
-        support: false,
+        support: true,
         link: 'https://github.com/primefaces/primeng/releases/tag/12.2.2'
       },
       '11': {
         libraryVersion: '11.4.5',
-        support: false,
+        support: true,
         link: 'https://github.com/primefaces/primeng/releases/tag/11.4.5'
       },
       '10': {
         libraryVersion: '10.0.3',
-        support: false,
+        support: true,
         link: 'https://github.com/primefaces/primeng/releases/tag/10.0.3'
       },
       '9': {
         libraryVersion: '9.1.3',
-        support: false,
+        support: true,
         link: 'https://github.com/primefaces/primeng/releases/tag/9.1.3'
       },
       '8': {
         libraryVersion: '8.1.1',
-        support: false,
+        support: true,
         link: 'https://github.com/primefaces/primeng/releases/tag/8.1.1'
       }
     },
