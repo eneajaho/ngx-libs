@@ -74,11 +74,14 @@ import { StateService } from './state.service';
           *ngFor="let version of state.allAngularVersions"
           [matColumnDef]="version"
         >
-          <th mat-header-cell *matHeaderCellDef>v{{ version }}</th>
+          <th mat-header-cell *matHeaderCellDef>
+            <div>v{{ version }}</div>
+          </th>
           <td mat-cell *matCellDef="let row">
             <ng-container *ngIf="row.versionSupport[version]?.support === true">
               <a
-                mat-flat-button
+                mat-button
+                color="primary"
                 [href]="row.versionSupport[version]?.link"
                 target="_blank"
               >
@@ -101,7 +104,7 @@ import { StateService } from './state.service';
               *ngIf="row.versionSupport[version]?.support === 'partial'"
             >
               <a
-                mat-flat-button
+                mat-button
                 [href]="row.versionSupport[version]?.link"
                 target="_blank"
                 [matTooltip]="row.versionSupport[version]?.note"
@@ -126,6 +129,10 @@ import { StateService } from './state.service';
       .table-container {
         width: 100%;
         overflow: auto;
+      }
+
+      .mat-mdc-header-cell > div {
+        padding: 0px 8px;
       }
 
       .mat-column-name {
