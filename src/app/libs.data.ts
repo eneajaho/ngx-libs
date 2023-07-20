@@ -401,7 +401,7 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
       '15': {
         libraryVersion: '15.0.0',
-        support: false,
+        support: true,
         link: 'https://github.com/orizens/ngx-infinite-scroll/blob/master/projects/ngx-infinite-scroll/CHANGELOG.md#v-1500-20220812'
       },
       '14': {
