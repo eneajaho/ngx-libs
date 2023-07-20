@@ -74,7 +74,8 @@ import { StateService } from './state.service';
           *ngFor="let version of state.allAngularVersions"
           [matColumnDef]="version"
         >
-          <th mat-header-cell *matHeaderCellDef>v{{ version }}</th>
+          <th class="table-container__angular-version"
+              mat-header-cell *matHeaderCellDef>v{{ version }}</th>
           <td mat-cell *matCellDef="let row">
             <ng-container *ngIf="row.versionSupport[version]?.support === true">
               <a
@@ -128,6 +129,17 @@ import { StateService } from './state.service';
         overflow: auto;
       }
 
+      .table-container, tbody, td{
+          padding-left: 0.4rem!important;
+      }
+      .table-container__angular-version {
+        padding-left: 1.56rem !important;
+      }
+
+      .mat-column-name{
+        padding-left: 1rem !important;
+      }
+      
       .mat-column-name {
         max-width: 210px;
         background: white;
