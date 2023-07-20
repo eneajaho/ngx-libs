@@ -20,7 +20,10 @@ import { StateService } from './state.service';
         <ng-container matColumnDef="name" sticky>
           <th mat-header-cell *matHeaderCellDef>Name</th>
           <td mat-cell *matCellDef="let row">
-            <b style="font-size: 16px">{{ row.name }}</b>
+            <div style="display: flex; gap: 0.3rem;">
+              <b style="font-size: 16px">{{ row.name }}</b>
+              <mat-icon style="color: lightcoral;" *ngIf="row.description" [matTooltip]="row.description">info</mat-icon>
+            </div>
           </td>
         </ng-container>
         <ng-container matColumnDef="githubUrl">

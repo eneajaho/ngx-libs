@@ -325,4 +325,91 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       }
     },
   },
+  {
+    name: 'ngx-mask',
+    npmUrl: 'https://www.npmjs.com/package/ngx-mask',
+    githubUrl: 'https://github.com/JsDaddy/ngx-mask',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.2.4',
+        support: true,
+      },
+      '15': {
+        libraryVersion: '15.1.5',
+        support: true,
+      },
+      '14': {
+        libraryVersion: '14.2.4',
+        support: true,
+      },
+      '13': {
+        libraryVersion: '13.1.15',
+        support: true,
+      },
+      '12': {
+        libraryVersion: '12.0.0',
+        support: true,
+      }
+    }
+  },
+  {
+    name: 'ngx-cookie-service',
+    npmUrl: 'https://www.npmjs.com/package/ngx-cookie-service',
+    githubUrl: 'https://github.com/stevermeister/ngx-cookie-service',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.0.0',
+        support: true,
+        link: 'https://github.com/stevermeister/ngx-cookie-service/releases/tag/v16.0.0'
+      },
+      '15': {
+        libraryVersion: '15.0.0',
+        support: true,
+        link: 'https://github.com/stevermeister/ngx-cookie-service/releases/tag/v15.0.0'
+      },
+      '14': {
+        libraryVersion: '14.0.1',
+        support: true,
+        link: 'https://github.com/stevermeister/ngx-cookie-service/releases/tag/v14.0.1'
+      },
+      '13': {
+        libraryVersion: '13.2.1',
+        support: true,
+        link: 'https://github.com/stevermeister/ngx-cookie-service/releases/tag/v13.2.1'
+      },
+      '12': {
+        libraryVersion: '12.0.3',
+        support: true,
+        link: 'https://github.com/stevermeister/ngx-cookie-service/releases/tag/v12.0.3'
+      }
+    }
+  },
+  {
+    name: 'ngx-infinite-scroll',
+    npmUrl: 'https://www.npmjs.com/package/ngx-infinite-scroll',
+    githubUrl: 'https://github.com/orizens/ngx-infinite-scroll',
+    description: 'Versions now follow Angular\'s version to easily reflect compatibility. Meaning, for Angular 10, use ngx-infinite-scroll @^10.0.0',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.0.0',
+        support: true
+      },
+      '15': {
+        libraryVersion: '15.0.0',
+        support: true
+      },
+      '14': {
+        libraryVersion: '14.0.0',
+        support: true
+      },
+      '13': {
+        libraryVersion: '13.0.0',
+        support: true
+      },
+      '12': {
+        libraryVersion: '12.0.0',
+        support: true
+      }
+    }
+  }
 ];

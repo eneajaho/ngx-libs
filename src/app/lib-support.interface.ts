@@ -2,6 +2,7 @@ export interface LibrarySupport {
   name: string; // name of the library (e.g. @rx-angular/isr)
   npmUrl: string; // url to the npm library
   githubUrl: string; // url to the github repo
+  description?: string; // some additional info added as tooltip when hover over the name
 
   versionSupport: {
     // key is version of angular (e.g. 11.0.0)
