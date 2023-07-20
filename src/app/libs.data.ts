@@ -489,7 +489,7 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
   {
     name: 'primeng',
     npmUrl: 'https://www.npmjs.com/package/primeng',
-    githubUrl: 'hhttps://github.com/primefaces/primeng',
+    githubUrl: 'https://github.com/primefaces/primeng',
     versionSupport: {
       '16': {
         libraryVersion: '16.0.2',
