@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { SupportGridComponent } from './support-grid.component';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer.component';
+import { ContributorsComponent } from './contributors.component';
 
 @Component({
   selector: 'app-root',
@@ -32,6 +33,7 @@ import { FooterComponent } from './footer.component';
       <app-support-grid *ngIf="showType === 'grid'"></app-support-grid>
     </div>
 
+    <app-contributors></app-contributors>
     <app-footer></app-footer>
   `,
   styles: [
@@ -61,6 +63,7 @@ import { FooterComponent } from './footer.component';
     MatButtonToggleModule,
     MatIconModule,
     FooterComponent,
+    ContributorsComponent,
   ],
 })
 export class AppComponent {

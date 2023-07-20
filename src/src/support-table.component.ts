@@ -113,9 +113,9 @@ import { StateService } from './state.service';
         width: 100%;
         overflow: auto;
       }
-      td.mat-column-name {
-        width: 20px;
-        padding-right: 8px;
+
+      .mat-column-name {
+        max-width: 210px;
         background: white;
         z-index: 10 !important;
       }

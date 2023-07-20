@@ -8,9 +8,10 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
     >
       <div>
         Built with Angular and ❤️ by
-        <a href="https://twitter.com/eneajaho" target="_blank">
+        <a href="https://twitter.com/Enea_Jahollari" target="_blank">
           Enea Jahollari
         </a>
+
         🙌
       </div>
 
