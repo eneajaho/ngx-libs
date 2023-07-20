@@ -393,7 +393,6 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
     name: 'ngx-infinite-scroll',
     npmUrl: 'https://www.npmjs.com/package/ngx-infinite-scroll',
     githubUrl: 'https://github.com/orizens/ngx-infinite-scroll',
-    description: 'Versions now follow Angular\'s version to easily reflect compatibility. Meaning, for Angular 10, use ngx-infinite-scroll @^10.0.0',
     versionSupport: {
       '16': {
         libraryVersion: '16.0.0',
