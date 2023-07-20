@@ -47,8 +47,7 @@ export class StateService {
       .split(',')
       .map((v) => v.trim())
       .filter(Boolean);
-    const versions = maybeVersions.filter((v) => validVersions.includes(v));
-    return versions;
+    return maybeVersions.filter((v) => validVersions.includes(v));
   }
 
   constructor() {
