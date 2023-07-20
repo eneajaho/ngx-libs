@@ -582,4 +582,77 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: '@ngx-translate/core',
+    npmUrl: 'https://www.npmjs.com/package/@ngx-translate/core',
+    githubUrl: 'https://github.com/ngx-translate/core',
+    versionSupport: {
+      '16': {
+        libraryVersion: '15.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v15.0.0',
+      },
+      '15': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v14.0.0',
+      },
+      '14': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v14.0.0',
+      },
+      '13': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v14.0.0',
+        note: '(ivy only)',
+      },
+      '13': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v13.0.0',
+      },
+      '12': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v13.0.0',
+      },  
+      '11': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v13.0.0',
+      },   
+      '10': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v13.0.0',
+      }, 
+      '9': {
+        libraryVersion: '12.1.2',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v12.1.2',
+      }, 
+      '8': {
+        libraryVersion: '12.1.2',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v12.1.2',
+      }, 
+      '7': {
+        libraryVersion: '11.0.1',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v11.0.1',
+      }, 
+      '6': {
+        libraryVersion: '10.0.2',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v10.0.2',
+      }, 
+      '5': {
+        libraryVersion: '9.1.1',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v9.1.1',
+      }, 
+     },
+  },
 ];
