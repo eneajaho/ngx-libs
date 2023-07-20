@@ -437,7 +437,7 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
   {
     name: 'ngx-spinner',
     npmUrl: 'https://www.npmjs.com/package/ngx-spinner',
-    githubUrl: 'github.com/Napster2210/ngx-spinner',
+    githubUrl: 'https://github.com/Napster2210/ngx-spinner',
     versionSupport: {
       '16': {
         libraryVersion: '16.0.2',
@@ -582,6 +582,4 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
-
-
 ];
