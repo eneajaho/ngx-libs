@@ -539,34 +539,6 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
     },
   },
   {
-    name: 'ngx-infinite-scroll',
-    npmUrl: 'https://www.npmjs.com/package/ngx-infinite-scroll',
-    githubUrl: 'https://github.com/orizens/ngx-infinite-scroll',
-    versionSupport: {
-      '16': {
-        libraryVersion: '16.0.0',
-        support: true,
-        link: 'https://www.npmjs.com/package/ngx-infinite-scroll/v/16.0.0',
-        note:'release tags are not available in github repo'
-      },
-      '15': {
-        libraryVersion: '15.0.0',
-        support: true,
-        link: 'https://www.npmjs.com/package/ngx-infinite-scroll/v/15.0.0'
-      },
-      '14': {
-        libraryVersion: '14.0.1',
-        support: true,
-        link: 'https://www.npmjs.com/package/ngx-infinite-scroll/v/14.0.1'
-      },
-      '13': {
-        libraryVersion: '13.1.0',
-        support: true,
-        link: 'https://www.npmjs.com/package/ngx-infinite-scroll/v/13.1.0'
-      }
-    },
-  },
-  {
     name: '@ngx-translate/core',
     npmUrl: 'https://www.npmjs.com/package/@ngx-translate/core',
     githubUrl: 'https://github.com/ngx-translate/core',
