@@ -724,5 +724,32 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
         link: 'https://github.com/orizens/ngx-infinite-scroll/blob/master/projects/ngx-infinite-scroll/CHANGELOG.md#v-1300-20222603'
       }
     }
+  },
+  {
+    name: '@ng-icons/core',
+    npmUrl: 'https://www.npmjs.com/package/@ng-icons/core',
+    githubUrl: 'https://github.com/ng-icons/ng-icons',
+    versionSupport: {
+      '16': {
+        libraryVersion: '25.0.0',
+        support: true,
+        link: 'https://github.com/ng-icons/ng-icons/releases/tag/v25.0.0'
+      },
+      '15': {
+        libraryVersion: '24.0.0',
+        support: true,
+        link: 'https://github.com/ng-icons/ng-icons/releases/tag/v24.0.0'
+      },
+      '14': {
+        libraryVersion: '22.0.0',
+        support: true,
+        link: 'https://github.com/ng-icons/ng-icons/releases/tag/v22.0.0'
+      },
+      '13': {
+        libraryVersion: '17.0.0',
+        support: true,
+        link: 'https://github.com/ng-icons/ng-icons/releases/tag/v17.0.0'
+      }
+    }
   }
 ];
