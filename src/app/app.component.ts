@@ -1,5 +1,6 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { ContributorsComponent } from './contributors.component';
@@ -12,11 +13,11 @@ import { SupportTableComponent } from './support-table.component';
 @Component({
   selector: 'app-root',
   template: `
-    <app-header></app-header>
+    <app-header />
 
     <div style="padding: 20px;">
       <div class="toolbar-container">
-        <app-search></app-search>
+        <app-search />
         <div style="display: flex; justify-content: end; align-items: start">
           <mat-button-toggle-group [(value)]="showType" aria-label="Show type">
             <mat-button-toggle value="grid">
@@ -29,12 +30,12 @@ import { SupportTableComponent } from './support-table.component';
         </div>
       </div>
 
-      <app-support-table *ngIf="showType === 'table'"></app-support-table>
-      <app-support-grid *ngIf="showType === 'grid'"></app-support-grid>
+      <app-support-table *ngIf="showType === 'table'" />
+      <app-support-grid *ngIf="showType === 'grid'" />
     </div>
 
-    <app-contributors></app-contributors>
-    <app-footer></app-footer>
+    <app-contributors />
+    <app-footer />
   `,
   styles: [
     `
@@ -70,8 +71,9 @@ export class AppComponent {
   showType: 'grid' | 'table' = 'table';
 
   constructor() {
+    const breakpointObserver = inject(BreakpointObserver);
     // if is mobile, show grid by default
-    if (window.innerWidth < 600) {
+    if (breakpointObserver.isMatched(Breakpoints.Handset)) {
       this.showType = 'grid';
     }
   }
