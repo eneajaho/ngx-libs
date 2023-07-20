@@ -1,13 +1,13 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { HeaderComponent } from './header.component';
-import { SearchComponent } from './search.component';
-import { SupportTableComponent } from './support-table.component';
+import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
-import { SupportGridComponent } from './support-grid.component';
-import { CommonModule } from '@angular/common';
-import { FooterComponent } from './footer.component';
 import { ContributorsComponent } from './contributors.component';
+import { FooterComponent } from './footer.component';
+import { HeaderComponent } from './header.component';
+import { SearchComponent } from './search.component';
+import { SupportGridComponent } from './support-grid.component';
+import { SupportTableComponent } from './support-table.component';
 
 @Component({
   selector: 'app-root',

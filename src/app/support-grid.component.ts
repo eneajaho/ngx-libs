@@ -8,10 +8,10 @@ import {
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { LibraryAngularVersionSupport } from './lib-support.interface';
 import { ReplaceStringPipe } from './replace-string.pipe';
 import { StateService } from './state.service';
-import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-support-grid',
@@ -25,7 +25,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
               <img src="assets/npm.png" width="20" alt="Npm link" />
               {{
                 lib.npmUrl
-                  | replaceString : 'https://www.npmjs.com/package/' : ''
+                  | replaceString: 'https://www.npmjs.com/package/' : ''
               }}
             </a>
             <a
@@ -35,7 +35,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
               target="_blank"
             >
               <img src="assets/github.svg" width="12" alt="Github link" />
-              {{ lib.githubUrl | replaceString : 'https://github.com/' : '' }}
+              {{ lib.githubUrl | replaceString: 'https://github.com/' : '' }}
             </a>
           </mat-card-subtitle>
         </mat-card-header>
@@ -49,8 +49,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
             <tr *ngFor="let item of lib.versionSupport">
               <td>v{{ item.angularVersion }}</td>
               <td>
-                <ng-container *ngIf="item.support === true"> ✅ </ng-container>
-                <ng-container *ngIf="item.support === false"> ❌ </ng-container>
+                <ng-container *ngIf="item.support === true">✅</ng-container>
+                <ng-container *ngIf="item.support === false">❌</ng-container>
                 <ng-container *ngIf="item.support === 'progress'">
                   ⏳
                 </ng-container>
@@ -125,14 +125,19 @@ export class SupportGridComponent {
 
       const versionSupport = keys
         .sort((a, b) => +b - +a)
-        .reduce((acc, key) => {
-          if (versionsToShow.includes(key))
-            acc.push({
-              angularVersion: key,
-              ...lib.versionSupport[key],
-            });
-          return acc;
-        }, [] as Array<LibraryAngularVersionSupport & { angularVersion: string }>);
+        .reduce(
+          (acc, key) => {
+            if (versionsToShow.includes(key))
+              acc.push({
+                angularVersion: key,
+                ...lib.versionSupport[key],
+              });
+            return acc;
+          },
+          [] as Array<
+            LibraryAngularVersionSupport & { angularVersion: string }
+          >,
+        );
 
       return { ...lib, versionSupport };
     });

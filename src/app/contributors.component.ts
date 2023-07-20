@@ -1,8 +1,10 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-contributors',
-  template: ` <div style="display: none;">TBD: Contributors</div> `,
+  template: `
+    <div style="display: none;">TBD: Contributors</div>
+  `,
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
