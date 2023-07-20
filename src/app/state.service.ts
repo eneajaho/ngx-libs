@@ -70,7 +70,7 @@ export class StateService {
       // Auto-update URL when state changes
       const searchFilter = this.searchFilter().trim();
       const versionsFilter = this.versionsToShow().join(',');
-      let queryParams: SearchQueryParams = {};
+      const queryParams: SearchQueryParams = {};
       if (searchFilter) {
         queryParams.search = searchFilter;
       }
