@@ -87,6 +87,13 @@ import { StateService } from './state.service';
               *ngIf="row.versionSupport[version]?.support === false"
             >
               ❌ Not Supported
+              <a
+                mat-button
+                [href]="row.githubUrl+'/issues/new?assignees=&title=chore:version'"
+                target="_blank"
+              >
+                🔑 Create an issue
+              </a>
             </ng-container>
             <ng-container
               *ngIf="row.versionSupport[version]?.support === 'progress'"
