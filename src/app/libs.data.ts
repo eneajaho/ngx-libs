@@ -231,4 +231,102 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: '@ngx-translate/core',
+    npmUrl: 'https://www.npmjs.com/package/@ngx-translate/core',
+    githubUrl: 'https://github.com/ngx-translate/core',
+    versionSupport: {
+      '16': {
+        libraryVersion: '15.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v15.0.0',
+      },
+      '15': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v14.0.0',
+        note: 'Can be also used with Angular 15.0.0, 14.0.0'
+      },
+      '14': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v14.0.0',
+        note: 'Can be also used with Angular 15.0.0, 14.0.0'
+      },
+      '13': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v13.0.0',
+        note: 'Can be also used with Angular 10.0.0, 11.0.0, 12.0.0, 13.0.0'
+      },
+      '12': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v13.0.0',
+        note: 'Can be also used with Angular 10.0.0, 11.0.0, 12.0.0, 13.0.0'
+      },
+      '11': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v13.0.0',
+        note: 'Can be also used with Angular 10.0.0, 11.0.0, 12.0.0, 13.0.0'
+      },
+      '10': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v13.0.0',
+        note: 'Can be also used with Angular 10.0.0, 11.0.0, 12.0.0, 13.0.0'
+      },
+      '9': {
+        libraryVersion: '12.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v12.0.0',
+        note: 'Can be also used with Angular 9.0.0, 8.0.0'
+      },
+      '8': {
+        libraryVersion: '12.0.0',
+        support: true,
+        link: 'https://github.com/ngx-translate/core/releases/tag/v12.0.0',
+        note: 'Can be also used with Angular 9.0.0, 8.0.0'
+      },
+    },
+  },
+  {
+    name: '@fullcalendar/core',
+    npmUrl: 'https://www.npmjs.com/package/@fullcalendar/core',
+    githubUrl: 'https://github.com/fullcalendar/fullcalendar',
+    versionSupport: {
+      '16': {
+        libraryVersion: '6.1.8',
+        support: true,
+        link: 'https://github.com/fullcalendar/fullcalendar/releases/tag/v6.1.8',
+        note: 'Can be used with Angular 13.0.0, 14.0.0, 15.0.0, 16.0.0',
+      },
+      '15': {
+        libraryVersion: '6.1.8',
+        support: true,
+        link: 'https://github.com/fullcalendar/fullcalendar/releases/tag/v6.1.8',
+        note: 'Can be used with Angular 13.0.0, 14.0.0, 15.0.0, 16.0.0',
+      },
+      '14': {
+        libraryVersion: '6.1.8',
+        support: true,
+        link: 'https://github.com/fullcalendar/fullcalendar/releases/tag/v6.1.8',
+        note: 'Can be used with Angular 13.0.0, 14.0.0, 15.0.0, 16.0.0',
+      },
+      '13': {
+        libraryVersion: '6.1.8',
+        support: true,
+        link: 'https://github.com/fullcalendar/fullcalendar/releases/tag/v6.1.8',
+        note: 'Can be used with Angular 13.0.0, 14.0.0, 15.0.0, 16.0.0',
+      },
+      '12': {
+        libraryVersion: '5.11.5',
+        support: true,
+        link: 'https://github.com/fullcalendar/fullcalendar/releases/tag/v5.11.5',
+      },
+    },
+  },
+
+  
 ];
