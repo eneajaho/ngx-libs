@@ -434,4 +434,56 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: 'ngx-spinner',
+    npmUrl: 'https://www.npmjs.com/package/ngx-spinner',
+    githubUrl: 'github.com/Napster2210/ngx-spinner',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.0.2',
+        support: true,
+        link: 'https://github.com/Napster2210/ngx-spinner/releases/tag/v16',
+      },
+      '15': {
+        libraryVersion: '15.0.1',
+        support: true,
+        link: 'https://github.com/Napster2210/ngx-spinner/releases/tag/v15',
+      },
+      '14': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: '',
+      },
+      '13': {
+        libraryVersion: '13.1.1',
+        support: true,
+        link: 'https://github.com/Napster2210/ngx-spinner/releases/tag/v13',
+      },
+      '12': {
+        libraryVersion: '12.0.0',
+        support: true,
+        link: 'https://github.com/Napster2210/ngx-spinner/releases/tag/v12.0.0',
+      },
+      '11': {
+        libraryVersion: '11.0.2',
+        support: true,
+        link: 'https://github.com/Napster2210/ngx-spinner/releases/tag/11.0.2',
+      },
+      '10': {
+        libraryVersion: '10.0.1',
+        support: true,
+        link: 'https://github.com/Napster2210/ngx-spinner/releases/tag/v10.0.1',
+      },
+      '9': {
+        libraryVersion: '9.0.2',
+        support: true,
+        link: 'https://github.com/Napster2210/ngx-spinner/releases/tag/v9.0.2',
+      },
+      '8': {
+        libraryVersion: '8.1.0',
+        support: true,
+        link: 'https://github.com/Napster2210/ngx-spinner/releases/tag/v8.1.0',
+      },
+    },
+  },
 ];
