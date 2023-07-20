@@ -21,7 +21,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
       <div style="display: flex; align-items:center; gap: 8px;">
         <a
           mat-button
-          href="https://github.com/eneajaho/ngx-libs/blob/master/src/src/libs.data.ts"
+          href="https://github.com/eneajaho/ngx-libs/blob/master/src/app/libs.data.ts"
           target="_blank"
           class="example-icon favorite-icon"
           aria-label="Example icon-button with heart icon"
