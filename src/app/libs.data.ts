@@ -434,4 +434,46 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: '@fullcalendar/angular',
+    npmUrl: 'https://www.npmjs.com/package/@fullcalendar/angular',
+    githubUrl: 'https://github.com/fullcalendar/fullcalendar-angular',
+    versionSupport: {
+      '16': {
+        libraryVersion: '5.11.3',
+        support: true,
+        link: 'https://github.com/fullcalendar/fullcalendar-angular/releases/tag/v5.11.3',
+      },
+      '15': {
+        libraryVersion: '5.11.3',
+        support: true,
+        link: 'https://github.com/fullcalendar/fullcalendar-angular/releases/tag/v5.11.3',
+      },
+      '14': {
+        libraryVersion: '5.11.3',
+        support: true,
+        link: 'https://github.com/fullcalendar/fullcalendar-angular/releases/tag/v5.11.3',
+      },
+      '13': {
+        libraryVersion: '5.10.2',
+        support: true,
+        link: 'https://github.com/fullcalendar/fullcalendar-angular/releases/tag/v5.10.2',
+      },
+      '12': {
+        libraryVersion: '5.7.1',
+        support: true,
+        link: 'https://github.com/fullcalendar/fullcalendar-angular/releases/tag/v5.7.1',
+      },
+      '11': {
+        libraryVersion: '5.7.1',
+        support: true,
+        link: 'https://github.com/fullcalendar/fullcalendar-angular/releases/tag/v5.7.1',
+      },
+      '10': {
+        libraryVersion: '5.3.1',
+        support: true,
+        link: 'https://github.com/fullcalendar/fullcalendar-angular/releases/tag/v5.3.1',
+      },
+    },
+  },
 ];
