@@ -1,4 +1,4 @@
-import { LibrarySupport } from './lib-support.interface';
+import {LibrarySupport} from './lib-support.interface';
 
 export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
   {
@@ -582,4 +582,58 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: '@ngbmodule/material-carousel',
+    npmUrl: 'https://www.npmjs.com/package/@ngbmodule/material-carousel',
+    githubUrl: 'https://github.com/gabrielbusarello/material2-carousel',
+    versionSupport: {
+      '16': {
+        support: false,
+      },
+      '15': {
+        support: false,
+      },
+      '14': {
+        support: 'progress',
+        link: 'https://github.com/gabrielbusarello/material2-carousel/pull/42'
+      },
+      '13': {
+        support: 'progress',
+        link: 'https://github.com/gabrielbusarello/material2-carousel/pull/36'
+      },
+      '12': {
+        support: 'progress',
+        link: 'https://github.com/gabrielbusarello/material2-carousel/pull/22'
+      },
+      '11': {
+        libraryVersion: '0.7.2',
+        support: true,
+        link: 'https://github.com/gabrielbusarello/material2-carousel/releases/tag/v0.7.0'
+      },
+    },
+  },
+  {
+    name: '@swimlane/ngx-charts',
+    npmUrl: 'https://www.npmjs.com/package/@swimlane/ngx-charts',
+    githubUrl: 'https://github.com/swimlane/ngx-charts',
+    versionSupport: {
+      '16': {
+        support: false,
+      },
+      '15': {
+        support: 'progress',
+        link: 'https://github.com/swimlane/ngx-charts/pull/1855'
+      },
+      '14': {
+        support: 'progress',
+        link: 'https://github.com/swimlane/ngx-charts/pull/1855'
+      },
+      '13': {
+        libraryVersion: '20.4.1',
+        support: true,
+        link: 'https://github.com/swimlane/ngx-charts/releases/tag/20.4.1'
+      },
+    },
+  },
+
 ];
