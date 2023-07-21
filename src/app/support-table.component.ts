@@ -89,7 +89,7 @@ import { StateService } from './state.service';
               ❌ Not Supported
               <a
                 mat-button
-                [href]="row.githubUrl+'/issues/new?assignees=&title=chore:version'"
+                [href]="row.githubUrl+'/issues/new?title=chore:version'"
                 target="_blank"
               >
                 🔑 Create an issue
