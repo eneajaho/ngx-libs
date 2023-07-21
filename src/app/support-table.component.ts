@@ -91,6 +91,7 @@ import { StateService } from './state.service';
                 mat-button
                 [href]="row.githubUrl+'/issues/new?title=chore:version'"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 🔑 Create an issue
               </a>
