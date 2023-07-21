@@ -799,4 +799,66 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: '@fortawesome/angular-fontawesome',
+    npmUrl: 'https://www.npmjs.com/package/@fortawesome/angular-fontawesome',
+    githubUrl: 'https://github.com/FortAwesome/angular-fontawesome',
+    versionSupport: {
+      '16': {
+        libraryVersion: '0.13.0',
+        support: true,
+        link: 'https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.13.0',
+      },
+      '15': {
+        libraryVersion: '0.12.1',
+        support: true,
+        link: 'https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.12.1',
+      },
+      '14': {
+        libraryVersion: '0.11.1',
+        support: true,
+        link: 'https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.11.1',
+      },
+      '13': {
+        libraryVersion: '0.10.2',
+        support: true,
+        link: 'https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.10.2',
+      },
+      '12': {
+        libraryVersion: '0.9.0',
+        support: true,
+        link: 'https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.9.0',
+      },
+      '11': {
+        libraryVersion: '0.8.2',
+        support: true,
+        link: 'https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.8.2',
+      },
+      '10': {
+        libraryVersion: '0.7.0',
+        support: true,
+        link: 'https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.7.0',
+      },
+      '9': {
+        libraryVersion: '0.6.1',
+        support: true,
+        link: 'https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.6.1',
+      },
+      '8': {
+        libraryVersion: '0.5.0',
+        support: true,
+        link: 'https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.5.0',
+      },
+      '7': {
+        libraryVersion: '0.3.0',
+        support: true,
+        link: 'https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.3.0',
+      },
+      '6': {
+        libraryVersion: '0.2.1',
+        support: true,
+        link: 'https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.2.1',
+      },
+    },
+  },
 ];
