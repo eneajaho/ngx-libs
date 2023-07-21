@@ -40,7 +40,7 @@ export class StateService {
 
   sanitizeVersions(
     unsafeInput: string | null,
-    validVersions: string[] = this.allAngularVersions,
+    validVersions: string[] = this.allAngularVersions
   ) {
     const maybeCSV = unsafeInput || '';
     const maybeVersions = maybeCSV
@@ -62,7 +62,7 @@ export class StateService {
     }
     if (url.searchParams.has('versions')) {
       this.versionsToShow.set(
-        this.sanitizeVersions(url.searchParams.get('versions')),
+        this.sanitizeVersions(url.searchParams.get('versions'))
       );
     }
 

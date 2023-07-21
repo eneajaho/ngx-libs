@@ -55,7 +55,7 @@ import { StateService } from './state.service';
               [href]="row.githubUrl"
               target="_blank"
             >
-              {{ row.githubUrl | replaceString: 'https://github.com/' : '' }}
+              {{ row.githubUrl | replaceString : 'https://github.com/' : '' }}
               <mat-icon>link</mat-icon>
             </a>
           </td>
