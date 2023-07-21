@@ -10,6 +10,20 @@ Filter the list by Angular version or library name. Click on the links to get to
 
 ## How to contribute
 
+### Automatic
+
+To add a **new** library, run the following command:
+
+```shell
+npm run add-lib
+```
+
+> Please leave feedback so we can improve the generator
+
+To edit an **existing** library, please refer to [Manual](#manual)
+
+### Manual
+
 If you want to add a library, please create a pull request with the following changes:
 
 - Add the library to the `libs.data.ts` file
