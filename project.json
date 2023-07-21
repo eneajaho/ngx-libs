@@ -84,6 +84,13 @@
         ],
         "scripts": []
       }
+    },
+    "write-json": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ts-node tools/src/write-json.ts dist/ngx-libs/assets/libs.json"
+      },
+      "dependsOn": ["build"]
     }
   }
 }

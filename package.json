@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "nx serve",
-    "build": "nx build",
+    "build": "nx run-many --targets=build,write-json -p ngx-libs",
     "test": "nx test",
     "add-lib": "nx g plugin:new-lib",
     "postinstall": "npx simple-git-hooks"
