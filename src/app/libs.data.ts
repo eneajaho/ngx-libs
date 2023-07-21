@@ -730,5 +730,72 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
         link: 'https://github.com/orizens/ngx-infinite-scroll/blob/master/projects/ngx-infinite-scroll/CHANGELOG.md#v-1300-20222603'
       }
     }
+  },
+  {
+    name: 'ng-bootstrap',
+    npmUrl: 'https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap',
+    githubUrl: 'https://github.com/ng-bootstrap/ng-bootstrap',
+    versionSupport: {
+      '16': {
+        libraryVersion: '15.1.0',
+        support: true,
+        link: 'https://github.com/ng-bootstrap/ng-bootstrap/releases/tag/15.1.0'
+      },
+      '15': {
+        libraryVersion: '14.2.0',
+        support: true,
+        link: 'https://github.com/ng-bootstrap/ng-bootstrap/releases/tag/14.2.0'
+      },
+      '14': {
+        libraryVersion: '13.1.1',
+        support: true,
+        link: 'https://github.com/ng-bootstrap/ng-bootstrap/releases/tag/13.1.1'
+      },
+      '13': {
+        libraryVersion: '12.1.2',
+        support: true,
+        link: 'https://github.com/ng-bootstrap/ng-bootstrap/releases/tag/12.1.2'
+      },
+      '12': {
+        libraryVersion: '10.0.0',
+        support: true,
+        link: 'https://github.com/ng-bootstrap/ng-bootstrap/releases/tag/10.0.0',
+      },
+      '11': {
+        libraryVersion: '9.1.3',
+        support: true,
+        link: 'https://github.com/ng-bootstrap/ng-bootstrap/releases/tag/9.1.3'
+      },
+      '10': {
+        libraryVersion: '8.0.4',
+        support: true,
+        link: 'https://github.com/ng-bootstrap/ng-bootstrap/releases/tag/8.0.4'
+      },
+      '9': {
+        libraryVersion: '6.2.0',
+        support: true,
+        link: 'https://github.com/ng-bootstrap/ng-bootstrap/releases/tag/6.2.0'
+      },
+      '8': {
+        libraryVersion: '5.3.0',
+        support: true,
+        link: 'https://github.com/ng-bootstrap/ng-bootstrap/releases/tag/5.3.0'
+      },
+      '7': {
+        libraryVersion: '4.2.2',
+        support: true,
+        link: 'https://github.com/ng-bootstrap/ng-bootstrap/releases/tag/4.2.2'
+      },
+      '6': {
+        libraryVersion: '2.2.2',
+        support: true,
+        link: 'https://github.com/ng-bootstrap/ng-bootstrap/releases/tag/2.2.2'
+      },
+      '5': {
+        libraryVersion: '1.1.2',
+        support: true,
+        link: 'https://github.com/ng-bootstrap/ng-bootstrap/releases/tag/1.1.2'
+      }
+    }
   }
 ];
