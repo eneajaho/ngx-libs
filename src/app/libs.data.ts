@@ -900,6 +900,61 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
         support: true,
         link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/8.0.0',
       },
-    },
   },
+  {
+    name: 'ngx-device-detector',
+    npmUrl: 'https://www.npmjs.com/package/ngx-device-detector',
+    githubUrl: 'https://github.com/AhsanAyaz/ngx-device-detector',
+    versionSupport: {
+      '16': {
+        libraryVersion: '6.0.0',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v6.0.0',
+      },
+      '15': {
+        libraryVersion: '5.0.0',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v5.0.0',
+      },
+      '14': {
+        libraryVersion: '4.0.0',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v4.0.0',
+      },
+      '13': {
+        libraryVersion: '3.0.0',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v3.0.0',
+      },
+      '12': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v2.1.0',
+      },
+      '11': {
+        libraryVersion: '2.0.5',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v2.0.5',
+      },
+      '10': {
+        libraryVersion: '1.4.5',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v1.4.5',
+      },
+      '9': {
+        libraryVersion: '1.4.1',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/1.4.1',
+      },
+      '8': {
+        libraryVersion: '1.3.5',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v1.3.5',
+      },
+      '7': {
+        libraryVersion: '1.3.3',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v1.3.3',
+      },
+    },
 ];
