@@ -1178,4 +1178,51 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: 'angular-split',
+    npmUrl: 'https://www.npmjs.com/package/angular-split',
+    githubUrl: 'https://github.com/angular-split/angular-split',
+    versionSupport: {
+      '15': {
+        libraryVersion: '15.0.0',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/pull/341',
+      },
+      '14': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: undefined,
+      },
+      '13': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: undefined,
+      },
+      '12': {
+        libraryVersion: '5.0.0-beta.1',
+        support: 'partial',
+        link: undefined,
+      },
+      '11': {
+        libraryVersion: '5.0.0-beta.2',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/issues/278',
+      },
+      '10': {
+        libraryVersion: '5.0.0-beta.0',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/issues/256',
+      },
+      '9': {
+        libraryVersion: '3.0.3',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/issues/218',
+      },
+      '8': {
+        libraryVersion: '3.0.2',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/issues/175',
+      },
+    },
+  },
 ];
