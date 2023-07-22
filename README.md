@@ -10,6 +10,12 @@ Filter the list by Angular version or library name. Click on the links to get to
 
 ## How to contribute
 
+
+## Take the issue 
+If you want to take one issue, feel free to use `.take` in the issue comment   
+![Screenshot of the Issues comment section with a sample comment of ".take"](src/assets/img.png)
+
+
 ### Automatic
 
 To add a **new** library, run the following command:
@@ -35,10 +41,5 @@ If you want to add a library, please create a pull request with the following ch
 - Run `npm start`
 
 ## License
-
 MIT
 
-
-## Take the issue 
-If you want to take one issue, feel free to use `.take` in the issue comment   
-![Screenshot of the Issues comment section with a sample comment of ".take"](src/assets/img.png)
