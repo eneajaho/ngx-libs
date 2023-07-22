@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ContributorsLoaderComponent } from './contributors-loader.component';
+import { ContributorsModel } from './contributors.mode';
 import { ContributorsStore } from './store/contributors.store';
 
 @Component({
@@ -22,7 +23,7 @@ import { ContributorsStore } from './store/contributors.store';
           <div class="contributor-container">
             <a
               class="contributor"
-              *ngFor="let contributor of vm.contributors"
+              *ngFor="let contributor of vm.contributors; trackBy: trackBy"
               [href]="contributor.html_url"
               target="_blank"
               [matTooltip]="contributor.login"
@@ -61,6 +62,7 @@ import { ContributorsStore } from './store/contributors.store';
 
       .contributor-container {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         gap: 4px;
       }
@@ -83,5 +85,9 @@ export class ContributorsComponent implements OnInit {
   readonly vm = this.contributorsStore.vm;
   ngOnInit(): void {
     this.contributorsStore.getContributors();
+  }
+
+  trackBy(index: number, item: ContributorsModel) {
+    return item.id;
   }
 }
