@@ -29,8 +29,9 @@ import { ContributorsStore } from './store/contributors.store';
               matTooltipPosition="above"
             >
               <img
-                [src]="contributor.avatar_url"
-                fill
+                [ngSrc]="contributor.avatar_url"
+                width="32"
+                height="32"
                 [alt]="contributor.login"
               />
             </a>
@@ -69,10 +70,7 @@ import { ContributorsStore } from './store/contributors.store';
         width: 32px;
         height: 32px;
         border-radius: 9999px;
-
         img {
-          width: 32px;
-          height: 32px;
           object-fit: cover;
           border-radius: 9999px;
         }
