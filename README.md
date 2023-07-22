@@ -41,4 +41,4 @@ MIT
 
 ## Take the issue 
 If you want to take one issue, feel free to use `.take` in the issue comment   
-![img.png](src/assets/img.png)
+![Screenshot of the Issues comment section with a sample comment of ".take"](src/assets/img.png)
