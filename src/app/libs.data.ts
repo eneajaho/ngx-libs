@@ -1049,4 +1049,61 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: '@coreui/angular',
+    npmUrl: 'https://www.npmjs.com/package/@coreui/angular',
+    githubUrl: 'https://github.com/coreui/coreui-angular',
+    versionSupport: {
+      '16': {
+        libraryVersion: '4.5.10',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/4.5.10',
+      },
+      '15': {
+        libraryVersion: '4.3.7',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/4.3.7',
+      },
+      '14': {
+        libraryVersion: '4.1.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/4.1.0',
+      },
+      '13': {
+        libraryVersion: '4.0.0-alpha.3',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/4.0.0-alpha.3',
+      },
+      '12': {
+        libraryVersion: '2.11.2',
+        support: 'partial',
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.11.2',
+      },
+      '11': {
+        libraryVersion: '2.11.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.11.0',
+      },
+      '10': {
+        libraryVersion: '2.10.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.10.0',
+      },
+      '9': {
+        libraryVersion: '2.9.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.9.0',
+      },
+      '8': {
+        libraryVersion: '2.5.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.5.0',
+      },
+      '7': {
+        libraryVersion: '2.2.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.2.0',
+      },
+    },
+  },
 ];
