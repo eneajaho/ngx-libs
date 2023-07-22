@@ -18,11 +18,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       .loader-container {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 0.5rem;
         .loader {
-          width: 32px;
-          height: 32px;
-          border-radius: 9999px;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 4rem;
           background: #e4e4e7;
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }

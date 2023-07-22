@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ContributorsLoaderComponent } from './contributors-loader.component';
-import { ContributorsModel } from './contributors.mode';
+import { ContributorsModel } from './contributors.model';
 import { ContributorsStore } from './store/contributors.store';
 
 @Component({
@@ -54,9 +54,9 @@ import { ContributorsStore } from './store/contributors.store';
   styles: [
     `
       .contributors-container {
-        margin: 24px 0;
+        margin: 1.5rem 0;
         .title {
-          margin-bottom: 12px;
+          margin-bottom: 0.75rem;
         }
       }
 
@@ -64,17 +64,17 @@ import { ContributorsStore } from './store/contributors.store';
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 4px;
+        gap: 0.25rem;
       }
 
       .contributor {
         display: block;
-        width: 32px;
-        height: 32px;
-        border-radius: 9999px;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 4rem;
         img {
           object-fit: cover;
-          border-radius: 9999px;
+          border-radius: 4rem;
         }
       }
     `,

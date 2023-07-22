@@ -2,7 +2,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { ComponentStore, tapResponse } from '@ngrx/component-store';
 import { pipe, switchMap, tap } from 'rxjs';
-import { ContributorsModel } from '../contributors.mode';
+import { ContributorsModel } from '../contributors.model';
 import { ContributorsService } from './../contributors.service';
 
 interface ContributorsStateModel {

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ContributorsModel } from './contributors.mode';
+import { ContributorsModel } from './contributors.model';
 
 @Injectable({ providedIn: 'root' })
 export class ContributorsService {
