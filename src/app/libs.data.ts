@@ -967,4 +967,86 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: '@ngx-papaparse',
+    npmUrl: 'https://www.npmjs.com/package/ngx-papaparse',
+    githubUrl: 'https://github.com/alberthaff/ngx-papaparse',
+    versionSupport: {
+      '16': {
+        libraryVersion: '7.0.0',
+        support: true,
+        link: undefined,
+      },
+      '15': {
+        libraryVersion: '7.0.0',
+        support: true,
+        link: undefined,
+      },
+      '14': {
+        libraryVersion: '6.x.x',
+        support: true,
+        link: undefined,
+      },
+      '13': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '12': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '11': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '10': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '9': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '8': {
+        libraryVersion: '4.x.x',
+        support: true,
+        link: undefined,
+      },
+      '7': {
+        libraryVersion: '3.x.x',
+        support: true,
+        link: undefined,
+      },
+      '6': {
+        libraryVersion: '3.x.x',
+        support: true,
+        link: undefined,
+      },
+      '5': {
+        libraryVersion: '2.1.3',
+        support: true,
+        link: undefined,
+      },
+      '4': {
+        libraryVersion: '1.2.5',
+        support: true,
+        link: undefined,
+      },
+      '3': {
+        libraryVersion: '1.2.5',
+        support: true,
+        link: undefined,
+      },
+      '2': {
+        libraryVersion: '1.2.5',
+        support: true,
+        link: undefined,
+      },
+    },
+  },
 ];
