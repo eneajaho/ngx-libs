@@ -8,6 +8,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       <div class="loader"></div>
       <div class="loader"></div>
       <div class="loader"></div>
+      <div class="loader"></div>
     </div>
   `,
   standalone: true,
