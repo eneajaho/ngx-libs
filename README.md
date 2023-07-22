@@ -37,3 +37,8 @@ If you want to add a library, please create a pull request with the following ch
 ## License
 
 MIT
+
+
+## Take the issue 
+If you want to take one issue, fel free to use `.take` in the issue comment   
+![img.png](src/assets/img.png)
