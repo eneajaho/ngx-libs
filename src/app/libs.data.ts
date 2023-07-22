@@ -704,7 +704,6 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
-
   {
     name: 'ngx-infinite-scroll',
     npmUrl: 'https://www.npmjs.com/package/ngx-infinite-scroll',
@@ -858,6 +857,48 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
         libraryVersion: '0.2.1',
         support: true,
         link: 'https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.2.1',
+      },
+    },
+  },
+  {
+    name: 'keycloak-angular',
+    npmUrl: 'https://www.npmjs.com/package/keycloak-angular',
+    githubUrl: 'https://github.com/mauriciovigolo/keycloak-angular',
+    versionSupport: {
+      '16': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v14.0.0',
+      },
+      '15': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v13.0.0',
+      },
+      '14': {
+        libraryVersion: '12.0.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v12.0.0',
+      },
+      '13': {
+        libraryVersion: '9.0.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v9.0.0',
+      },
+      '12': {
+        libraryVersion: '8.2.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v8.2.0',
+      },
+      '11': {
+        libraryVersion: '8.1.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v8.1.0',
+      },
+      '10': {
+        libraryVersion: '8.0.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/8.0.0',
       },
     },
   },
