@@ -900,6 +900,7 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
         support: true,
         link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/8.0.0',
       },
+    },
   },
   {
     name: 'ngx-device-detector',
@@ -957,5 +958,5 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
         link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v1.3.3',
       },
     },
-    }
+  },
 ];
