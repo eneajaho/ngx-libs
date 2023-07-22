@@ -40,5 +40,5 @@ MIT
 
 
 ## Take the issue 
-If you want to take one issue, fel free to use `.take` in the issue comment   
+If you want to take one issue, feel free to use `.take` in the issue comment   
 ![img.png](src/assets/img.png)
