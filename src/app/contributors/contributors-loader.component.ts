@@ -1,17 +1,20 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { NgFor } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Input,
+  numberAttribute,
+} from '@angular/core';
 
 @Component({
   selector: 'app-contributors-loader',
   template: `
     <div class="loader-container">
-      <div class="loader"></div>
-      <div class="loader"></div>
-      <div class="loader"></div>
-      <div class="loader"></div>
-      <div class="loader"></div>
+      <div class="loader" *ngFor="let item of [].constructor(count)"></div>
     </div>
   `,
   standalone: true,
+  imports: [NgFor],
   changeDetection: ChangeDetectionStrategy.OnPush,
   styles: [
     `
@@ -35,4 +38,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     `,
   ],
 })
-export class ContributorsLoaderComponent {}
+export class ContributorsLoaderComponent {
+  @Input({ transform: numberAttribute }) count = 1;
+}

@@ -17,7 +17,7 @@ import { ContributorsStore } from './store/contributors.store';
       <h3 class="title">Contributors</h3>
       <ng-container *ngIf="vm() as vm">
         <ng-container *ngIf="vm.isLoading; else contributorsTemplate">
-          <app-contributors-loader />
+          <app-contributors-loader count="5" />
         </ng-container>
         <ng-template #contributorsTemplate>
           <div class="contributor-container">

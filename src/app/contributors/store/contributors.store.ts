@@ -2,8 +2,8 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { ComponentStore, tapResponse } from '@ngrx/component-store';
 import { pipe, switchMap, tap } from 'rxjs';
+import { GithubService } from 'src/app/services/github.service';
 import { ContributorsModel } from '../contributors.model';
-import { ContributorsService } from './../contributors.service';
 
 interface ContributorsStateModel {
   contributors: ContributorsModel[];
@@ -13,7 +13,7 @@ interface ContributorsStateModel {
 
 @Injectable()
 export class ContributorsStore extends ComponentStore<ContributorsStateModel> {
-  private contributorsService = inject(ContributorsService);
+  private githubService = inject(GithubService);
   constructor() {
     super({
       contributors: [],
@@ -30,7 +30,7 @@ export class ContributorsStore extends ComponentStore<ContributorsStateModel> {
     pipe(
       tap(() => this.patchState({ isLoading: true })),
       switchMap(() =>
-        this.contributorsService.getContributors().pipe(
+        this.githubService.getContributors().pipe(
           tapResponse({
             next: (contributors) => this.patchState({ contributors }),
             error: (error: HttpErrorResponse) =>
