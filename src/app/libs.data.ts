@@ -861,4 +861,56 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: '@angular/fire',
+    npmUrl: 'https://www.npmjs.com/package/@angular/fire',
+    githubUrl: 'https://github.com/angular/angularfire',
+    versionSupport: {
+      '16': {
+        libraryVersion: '7.6.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/7.6.0',
+      },
+      '15': {
+        libraryVersion: '7.5.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/7.5.0',
+      },
+      '14': {
+        libraryVersion: '7.4.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/7.4.0',
+      },
+      '13': {
+        libraryVersion: '7.2.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/7.2.0',
+      },
+      '12': {
+        libraryVersion: '6.1.5',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/6.1.5',
+      },
+      '11': {
+        libraryVersion: '6.1.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/6.1.0',
+      },
+      '10': {
+        libraryVersion: '6.0.1',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/6.0.1',
+      },
+      '9': {
+        libraryVersion: '6.0.0',
+        support: 'partial',
+        link: 'https://github.com/angular/angularfire/releases/tag/6.0.0',
+      },
+      '8': {
+        libraryVersion: '6.0.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/6.0.0',
+      },
+    },
+  },
 ];
