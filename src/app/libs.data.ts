@@ -913,4 +913,58 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: '@kolkov/angular-editor',
+    npmUrl: 'https://www.npmjs.com/package/@kolkov/angular-editor',
+    githubUrl: 'https://github.com/kolkov/angular-editor',
+    versionSupport: {
+      '16': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '15': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '14': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '13': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '12': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '11': {
+        libraryVersion: '1.1.4',
+        support: 'partial',
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v1.1.4',
+        note: 'Can be used with Angular 11.0.0',
+      },
+      '10': {
+        libraryVersion: '1.1.2',
+        support: 'partial',
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v1.1.2',
+        note: 'Can be used with Angular 10.0.0',
+      },
+      '9': {
+        libraryVersion: '1.0.3',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v1.0.3',
+      },
+      '8': {
+        libraryVersion: '1.0.0-beta.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v1.0.0-beta.0',
+      },
+    },
+  },
 ];
