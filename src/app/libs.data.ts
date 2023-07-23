@@ -959,4 +959,72 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: 'ng-mocks',
+    npmUrl: 'https://www.npmjs.com/package/ng-mocks',
+    githubUrl: 'https://github.com/help-me-mom/ng-mocks',
+    versionSupport: {
+      '16': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+        note: 'According to github docs , the current version is tested and can be used with Angular 5 to 16',
+      },
+      '15': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '14': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '13': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '12': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '11': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '10': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '9': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '8': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '7': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '6': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '5': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+    },
+  },
 ];
