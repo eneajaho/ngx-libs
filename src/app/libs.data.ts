@@ -959,4 +959,56 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: '@iplab/ngx-file-upload',
+    npmUrl: 'https://www.npmjs.com/package/@iplab/ngx-file-upload',
+    githubUrl: 'https://github.com/pIvan/file-upload',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.0.0',
+        link: 'https://www.npmjs.com/package/@iplab/ngx-file-upload',
+        support: true,
+      },
+      '15': {
+        libraryVersion: '15.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-15.0.0',
+        support: true,
+      },
+      '14': {
+        libraryVersion: '14.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-14.0.0',
+        support: true,
+      },
+      '13': {
+        libraryVersion: '13.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-13.0.0',
+        support: true,
+      },
+      '12': {
+        libraryVersion: '12.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-12.0.0',
+        support: true,
+      },
+      '11': {
+        libraryVersion: '11.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-11.0.0',
+        support: true,
+      },
+      '10': {
+        libraryVersion: '1.5.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-1.5.0',
+        support: true,
+      },
+      '9': {
+        libraryVersion: '1.5.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-1.5.0',
+        support: true,
+      },
+      '8': {
+        libraryVersion: '1.5.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-1.5.0',
+        support: true,
+      },
+    },
+  },
 ];
