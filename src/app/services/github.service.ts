@@ -11,6 +11,6 @@ export class GithubService {
     this.basePath + '/contributors?q=contributions&order=asc';
 
   getContributors(): Observable<ContributorsModel[]> {
-    return this.http.get<ContributorsModel[]>(`${this.contributorsPath}`);
+    return this.http.get<ContributorsModel[]>(this.contributorsPath);
   }
 }

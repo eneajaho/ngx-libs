@@ -1,11 +1,7 @@
 import { NgFor, NgIf, NgOptimizedImage } from '@angular/common';
-import {
-  ChangeDetectionStrategy,
-  Component,
-  inject,
-  OnInit,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { provideComponentStore } from '@ngrx/component-store';
 import { ContributorsLoaderComponent } from './contributors-loader.component';
 import { ContributorsModel } from './contributors.model';
 import { ContributorsStore } from './store/contributors.store';
@@ -50,7 +46,7 @@ import { ContributorsStore } from './store/contributors.store';
   ],
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [ContributorsStore],
+  providers: [provideComponentStore(ContributorsStore)],
   styles: [
     `
       .contributors-container {
@@ -80,12 +76,9 @@ import { ContributorsStore } from './store/contributors.store';
     `,
   ],
 })
-export class ContributorsComponent implements OnInit {
+export class ContributorsComponent {
   private contributorsStore = inject(ContributorsStore);
   readonly vm = this.contributorsStore.vm;
-  ngOnInit(): void {
-    this.contributorsStore.getContributors();
-  }
 
   trackBy(index: number, item: ContributorsModel) {
     return item.id;

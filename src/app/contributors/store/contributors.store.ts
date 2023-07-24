@@ -1,6 +1,10 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { ComponentStore, tapResponse } from '@ngrx/component-store';
+import {
+  ComponentStore,
+  OnStateInit,
+  tapResponse,
+} from '@ngrx/component-store';
 import { pipe, switchMap, tap } from 'rxjs';
 import { GithubService } from 'src/app/services/github.service';
 import { ContributorsModel } from '../contributors.model';
@@ -12,13 +16,20 @@ interface ContributorsStateModel {
 }
 
 @Injectable()
-export class ContributorsStore extends ComponentStore<ContributorsStateModel> {
+export class ContributorsStore
+  extends ComponentStore<ContributorsStateModel>
+  implements OnStateInit
+{
   private githubService = inject(GithubService);
   constructor() {
     super({
       contributors: [],
       isLoading: false,
     });
+  }
+
+  ngrxOnStateInit() {
+    this.getContributors();
   }
 
   readonly vm = this.selectSignal(({ contributors, isLoading }) => ({
