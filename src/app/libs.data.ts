@@ -959,4 +959,53 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: 'angular-notifier',
+    npmUrl: 'https://www.npmjs.com/package/angular-notifier',
+    githubUrl: 'https://github.com/dominique-mueller/angular-notifier',
+    versionSupport: {
+      '10': {
+        libraryVersion: '8.0.0',
+        link: 'https://github.com/dominique-mueller/angular-notifier/releases/tag/8.0.0',
+        note: '',
+        support: true,
+      },
+      '11': {
+        libraryVersion: '9.0.0',
+        link: 'https://github.com/dominique-mueller/angular-notifier/releases/tag/9.0.0',
+        note: '',
+        support: true,
+      },
+      '12': {
+        libraryVersion: '10.0.0',
+        link: 'https://github.com/dominique-mueller/angular-notifier/releases/tag/10.0.0',
+        note: '',
+        support: true,
+      },
+      '13': {
+        libraryVersion: '11.0.0',
+        link: 'https://github.com/dominique-mueller/angular-notifier/releases/tag/11.0.0',
+        note: '',
+        support: true,
+      },
+      '14': {
+        libraryVersion: '12.0.0',
+        link: 'https://github.com/dominique-mueller/angular-notifier/releases/tag/12.0.0',
+        note: '',
+        support: true,
+      },
+      '15': {
+        libraryVersion: '13.0.0',
+        link: 'https://github.com/dominique-mueller/angular-notifier/releases/tag/13.0.0',
+        note: '',
+        support: true,
+      },
+      '16': {
+        libraryVersion: '14.0.0',
+        link: 'https://github.com/dominique-mueller/angular-notifier/releases/tag/14.0.0',
+        note: '',
+        support: true,
+      },
+    },
+  },
 ];
