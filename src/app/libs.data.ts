@@ -646,9 +646,9 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
     githubUrl: 'https://github.com/JsDaddy/ngx-mask',
     versionSupport: {
       '16': {
-        libraryVersion: '16.2.4',
+        libraryVersion: '16.2.5',
         support: true,
-        link: 'https://github.com/JsDaddy/ngx-mask/blob/develop/CHANGELOG.md#16242023-07-12',
+        link: 'https://github.com/JsDaddy/ngx-mask/blob/develop/CHANGELOG.md#16252023-07-24',
       },
       '15': {
         libraryVersion: '15.1.5',
