@@ -41,7 +41,7 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
   {
     name: '@rx-angular/state',
     npmUrl: 'https://www.npmjs.com/package/@rx-angular/state',
-    githubUrl: 'https://github.com/rx-angular/rx-angular',
+    githubUrl: 'https://github.com/rx-angular/rx-angular/tree/main/libs/state',
     versionSupport: {
       '16': {
         libraryVersion: '16.0.0',
