@@ -646,9 +646,9 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
     githubUrl: 'https://github.com/JsDaddy/ngx-mask',
     versionSupport: {
       '16': {
-        libraryVersion: '16.2.4',
+        libraryVersion: '16.2.5',
         support: true,
-        link: 'https://github.com/JsDaddy/ngx-mask/blob/develop/CHANGELOG.md#16242023-07-12',
+        link: 'https://github.com/JsDaddy/ngx-mask/blob/develop/CHANGELOG.md#16252023-07-24',
       },
       '15': {
         libraryVersion: '15.1.5',
@@ -903,6 +903,37 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
     },
   },
   {
+    name: 'ngx-mentions',
+    npmUrl: 'https://www.npmjs.com/package/ngx-mentions',
+    githubUrl: 'https://github.com/abhijit-chikane/ngx-mentions',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.2.0',
+        support: true,
+      },
+      '15': {
+        libraryVersion: '15.2.0',
+        support: true,
+      },
+      '14': {
+        libraryVersion: '14.2.0',
+        support: true,
+      },
+      '13': {
+        libraryVersion: '13.2.0',
+        support: true,
+      },
+      '12': {
+        libraryVersion: '12.2.0',
+        support: true,
+      },
+      '11': {
+        libraryVersion: '11.2.0',
+        support: true,
+      },
+    },
+  },
+  {
     name: 'ngx-device-detector',
     npmUrl: 'https://www.npmjs.com/package/ngx-device-detector',
     githubUrl: 'https://github.com/AhsanAyaz/ngx-device-detector',
@@ -956,6 +987,148 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
         libraryVersion: '1.3.3',
         support: true,
         link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v1.3.3',
+      },
+    },
+  },
+  {
+    name: 'ngx-echarts',
+    npmUrl: 'https://www.npmjs.com/package/ngx-echarts',
+    githubUrl: 'https://github.com/xieziyu/ngx-echarts',
+    versionSupport: {
+      '16': {
+        libraryVersion: 'v16.0.0',
+        support: true,
+        link: 'https://github.com/xieziyu/ngx-echarts/releases/tag/v16.0.0',
+      },
+      '15': {
+        libraryVersion: 'v15.0.3',
+        support: true,
+        link: 'https://github.com/xieziyu/ngx-echarts/releases/tag/v15.0.3',
+      },
+      '14': {
+        libraryVersion: 'v14.0.0',
+        support: true,
+        link: 'https://github.com/xieziyu/ngx-echarts/releases/tag/v14.0.0',
+      },
+    },
+  },
+  {
+    name: 'ng-mocks',
+    npmUrl: 'https://www.npmjs.com/package/ng-mocks',
+    githubUrl: 'https://github.com/help-me-mom/ng-mocks',
+    versionSupport: {
+      '16': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+        note: 'According to github docs , the current version is tested and can be used with Angular 5 to 16',
+      },
+      '15': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '14': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '13': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '12': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '11': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '10': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '9': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '8': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '7': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '6': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '5': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+    },
+  },
+  {
+    name: '@iplab/ngx-file-upload',
+    npmUrl: 'https://www.npmjs.com/package/@iplab/ngx-file-upload',
+    githubUrl: 'https://github.com/pIvan/file-upload',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.0.0',
+        link: 'https://www.npmjs.com/package/@iplab/ngx-file-upload',
+        support: true,
+      },
+      '15': {
+        libraryVersion: '15.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-15.0.0',
+        support: true,
+      },
+      '14': {
+        libraryVersion: '14.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-14.0.0',
+        support: true,
+      },
+      '13': {
+        libraryVersion: '13.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-13.0.0',
+        support: true,
+      },
+      '12': {
+        libraryVersion: '12.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-12.0.0',
+        support: true,
+      },
+      '11': {
+        libraryVersion: '11.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-11.0.0',
+        support: true,
+      },
+      '10': {
+        libraryVersion: '1.5.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-1.5.0',
+        support: true,
+      },
+      '9': {
+        libraryVersion: '1.5.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-1.5.0',
+        support: true,
+      },
+      '8': {
+        libraryVersion: '1.5.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-1.5.0',
+        support: true,
       },
     },
   },
