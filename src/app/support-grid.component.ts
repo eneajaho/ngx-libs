@@ -11,7 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import type { LibraryAngularVersionSupport } from 'libs/models';
 import { ReplaceStringPipe } from './replace-string.pipe';
-import { StateService } from './state.service';
+import { StateService } from './services/state.service';
 
 @Component({
   selector: 'app-support-grid',

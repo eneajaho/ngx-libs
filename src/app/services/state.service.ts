@@ -1,8 +1,8 @@
 import { PlatformLocation } from '@angular/common';
 import { computed, effect, inject, Injectable, signal } from '@angular/core';
 import { Router } from '@angular/router';
-import { LIBRARY_SUPPORT_DATA } from './libs.data';
-import { getAllAngularVersionsFromLibrarySupportData } from './utils';
+import { LIBRARY_SUPPORT_DATA } from '../libs.data';
+import { getAllAngularVersionsFromLibrarySupportData } from '../utils';
 
 type SearchQueryParams = {
   search?: string;
