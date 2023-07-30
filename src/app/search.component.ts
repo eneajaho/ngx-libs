@@ -13,7 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { debounceTime } from 'rxjs';
-import { StateService } from './state.service';
+import { StateService } from './services/state.service';
 
 @Component({
   selector: 'app-search',

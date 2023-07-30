@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
-import { ContributorsComponent } from './contributors.component';
+import { ContributorsComponent } from './contributors/contributors.component';
 import { FooterComponent } from './footer.component';
 import { HeaderComponent } from './header.component';
 import { SearchComponent } from './search.component';
@@ -32,9 +32,9 @@ import { SupportTableComponent } from './support-table.component';
 
       <app-support-table *ngIf="showType === 'table'" />
       <app-support-grid *ngIf="showType === 'grid'" />
+      <app-contributors />
     </div>
 
-    <app-contributors />
     <app-footer />
   `,
   styles: [

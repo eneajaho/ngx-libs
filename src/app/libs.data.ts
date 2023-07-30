@@ -960,6 +960,28 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
     },
   },
   {
+    name: 'ngx-echarts',
+    npmUrl: 'https://www.npmjs.com/package/ngx-echarts',
+    githubUrl: 'https://github.com/xieziyu/ngx-echarts',
+    versionSupport: {
+      '16': {
+        libraryVersion: 'v16.0.0',
+        support: true,
+        link: 'https://github.com/xieziyu/ngx-echarts/releases/tag/v16.0.0',
+      },
+      '15': {
+        libraryVersion: 'v15.0.3',
+        support: true,
+        link: 'https://github.com/xieziyu/ngx-echarts/releases/tag/v15.0.3',
+      },
+      '14': {
+        libraryVersion: 'v14.0.0',
+        support: true,
+        link: 'https://github.com/xieziyu/ngx-echarts/releases/tag/v14.0.0',
+      },
+    },
+  },
+  {
     name: '@iplab/ngx-file-upload',
     npmUrl: 'https://www.npmjs.com/package/@iplab/ngx-file-upload',
     githubUrl: 'https://github.com/pIvan/file-upload',
