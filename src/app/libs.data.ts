@@ -903,6 +903,37 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
     },
   },
   {
+    name: 'ngx-mentions',
+    npmUrl: 'https://www.npmjs.com/package/ngx-mentions',
+    githubUrl: 'https://github.com/abhijit-chikane/ngx-mentions',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.2.0',
+        support: true,
+      },
+      '15': {
+        libraryVersion: '15.2.0',
+        support: true,
+      },
+      '14': {
+        libraryVersion: '14.2.0',
+        support: true,
+      },
+      '13': {
+        libraryVersion: '13.2.0',
+        support: true,
+      },
+      '12': {
+        libraryVersion: '12.2.0',
+        support: true,
+      },
+      '11': {
+        libraryVersion: '11.2.0',
+        support: true,
+      },
+    },
+  },
+  {
     name: 'ngx-device-detector',
     npmUrl: 'https://www.npmjs.com/package/ngx-device-detector',
     githubUrl: 'https://github.com/AhsanAyaz/ngx-device-detector',
@@ -978,6 +1009,74 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
         libraryVersion: 'v14.0.0',
         support: true,
         link: 'https://github.com/xieziyu/ngx-echarts/releases/tag/v14.0.0',
+      },
+    },
+  },
+  {
+    name: 'ng-mocks',
+    npmUrl: 'https://www.npmjs.com/package/ng-mocks',
+    githubUrl: 'https://github.com/help-me-mom/ng-mocks',
+    versionSupport: {
+      '16': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+        note: 'According to github docs , the current version is tested and can be used with Angular 5 to 16',
+      },
+      '15': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '14': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '13': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '12': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '11': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '10': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '9': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '8': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '7': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '6': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '5': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
       },
     },
   },
