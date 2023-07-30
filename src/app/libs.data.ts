@@ -903,6 +903,37 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
     },
   },
   {
+    name: 'ngx-mentions',
+    npmUrl: 'https://www.npmjs.com/package/ngx-mentions',
+    githubUrl: 'https://github.com/abhijit-chikane/ngx-mentions',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.2.0',
+        support: true,
+      },
+      '15': {
+        libraryVersion: '15.2.0',
+        support: true,
+      },
+      '14': {
+        libraryVersion: '14.2.0',
+        support: true,
+      },
+      '13': {
+        libraryVersion: '13.2.0',
+        support: true,
+      },
+      '12': {
+        libraryVersion: '12.2.0',
+        support: true,
+      },
+      '11': {
+        libraryVersion: '11.2.0',
+        support: true,
+      },
+    },
+  },
+  {
     name: 'ngx-device-detector',
     npmUrl: 'https://www.npmjs.com/package/ngx-device-detector',
     githubUrl: 'https://github.com/AhsanAyaz/ngx-device-detector',
