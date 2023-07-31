@@ -1181,4 +1181,36 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: 'ngx-pipes',
+    npmUrl: 'https://www.npmjs.com/package/ngx-pipes',
+    githubUrl: 'https://github.com/danrevah/ngx-pipes',
+    versionSupport: {
+      '16': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/compare/v3.2.1...v3.2.2',
+      },
+      '15': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/compare/v3.2.1...v3.2.2',
+      },
+      '14': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/compare/v3.2.1...v3.2.2',
+      },
+      '13': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/compare/v3.2.1...v3.2.2',
+      },
+      '12': {
+        libraryVersion: '2.7.8',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/compare/v2.7.7...v2.7.8',
+      },
+    },
+  },
 ];
