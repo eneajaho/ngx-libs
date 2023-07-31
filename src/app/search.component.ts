@@ -1,5 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  OnInit,
+} from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -8,7 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { debounceTime } from 'rxjs';
-import { StateService } from './state.service';
+import { StateService } from './services/state.service';
 
 @Component({
   selector: 'app-search',
@@ -69,7 +74,7 @@ import { StateService } from './state.service';
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SearchComponent {
+export class SearchComponent implements OnInit {
   state = inject(StateService);
 
   searchControl = new FormControl<string>('', { nonNullable: true });
@@ -89,5 +94,9 @@ export class SearchComponent {
       .subscribe((value) => {
         this.state.searchFilter.set(value);
       });
+  }
+
+  ngOnInit() {
+    this.searchControl.setValue(this.state.searchFilter());
   }
 }
