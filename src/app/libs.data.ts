@@ -1182,6 +1182,38 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
     },
   },
   {
+    name: 'ngx-pipes',
+    npmUrl: 'https://www.npmjs.com/package/ngx-pipes',
+    githubUrl: 'https://github.com/danrevah/ngx-pipes',
+    versionSupport: {
+      '16': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
+      },
+      '15': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
+      },
+      '14': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
+      },
+      '13': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
+      },
+      '12': {
+        libraryVersion: '2.7.8',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#278-2022-01-21',
+      },
+    },
+  },
+  {
     name: '@ngbmodule/material-carousel',
     npmUrl: 'https://www.npmjs.com/package/@ngbmodule/material-carousel',
     githubUrl: 'https://github.com/gabrielbusarello/material2-carousel',
@@ -1194,20 +1226,20 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
       '14': {
         support: 'progress',
-        link: 'https://github.com/gabrielbusarello/material2-carousel/pull/42'
+        link: 'https://github.com/gabrielbusarello/material2-carousel/pull/42',
       },
       '13': {
         support: 'progress',
-        link: 'https://github.com/gabrielbusarello/material2-carousel/pull/36'
+        link: 'https://github.com/gabrielbusarello/material2-carousel/pull/36',
       },
       '12': {
         support: 'progress',
-        link: 'https://github.com/gabrielbusarello/material2-carousel/pull/22'
+        link: 'https://github.com/gabrielbusarello/material2-carousel/pull/22',
       },
       '11': {
         libraryVersion: '0.7.2',
         support: true,
-        link: 'https://github.com/gabrielbusarello/material2-carousel/releases/tag/v0.7.0'
+        link: 'https://github.com/gabrielbusarello/material2-carousel/releases/tag/v0.7.0',
       },
     },
   },
@@ -1221,18 +1253,17 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
       '15': {
         support: 'progress',
-        link: 'https://github.com/swimlane/ngx-charts/pull/1855'
+        link: 'https://github.com/swimlane/ngx-charts/pull/1855',
       },
       '14': {
         support: 'progress',
-        link: 'https://github.com/swimlane/ngx-charts/pull/1855'
+        link: 'https://github.com/swimlane/ngx-charts/pull/1855',
       },
       '13': {
         libraryVersion: '20.4.1',
         support: true,
-        link: 'https://github.com/swimlane/ngx-charts/releases/tag/20.4.1'
+        link: 'https://github.com/swimlane/ngx-charts/releases/tag/20.4.1',
       },
     },
   },
-
 ];
