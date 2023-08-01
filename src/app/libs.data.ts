@@ -1266,4 +1266,66 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: 'angular-gridster2',
+    npmUrl: 'https://www.npmjs.com/package/angular-gridster2',
+    githubUrl: 'https://github.com/tiberiuzuld/angular-gridster2',
+    versionSupport: {
+      '16': {
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v16.0.0',
+        libraryVersion: '16.0.0',
+      },
+      '15': {
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v15.0.0',
+        libraryVersion: '15.0.0',
+      },
+      '14': {
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v14.0.0',
+        libraryVersion: '14.0.0',
+      },
+      '13': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v13.0.0',
+      },
+      '12': {
+        libraryVersion: '12.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v12.0.0',
+      },
+      '11': {
+        libraryVersion: '11.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v11.0.0',
+      },
+      '10': {
+        libraryVersion: '10.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v10.0.0',
+      },
+      '9': {
+        libraryVersion: '9.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v9.0.0',
+      },
+      '8': {
+        libraryVersion: '8.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v8.0.0',
+      },
+      '7': {
+        libraryVersion: '7.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v7.0.0',
+      },
+      '6': {
+        libraryVersion: '6.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v6.0.0',
+      },
+    },
+  },
 ];
