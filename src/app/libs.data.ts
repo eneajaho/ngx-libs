@@ -1189,27 +1189,27 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       '16': {
         libraryVersion: '3.2.2',
         support: true,
-        link: 'https://github.com/danrevah/ngx-pipes/compare/v3.2.1...v3.2.2',
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
       },
       '15': {
         libraryVersion: '3.2.2',
         support: true,
-        link: 'https://github.com/danrevah/ngx-pipes/compare/v3.2.1...v3.2.2',
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
       },
       '14': {
         libraryVersion: '3.2.2',
         support: true,
-        link: 'https://github.com/danrevah/ngx-pipes/compare/v3.2.1...v3.2.2',
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
       },
       '13': {
         libraryVersion: '3.2.2',
         support: true,
-        link: 'https://github.com/danrevah/ngx-pipes/compare/v3.2.1...v3.2.2',
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
       },
       '12': {
         libraryVersion: '2.7.8',
         support: true,
-        link: 'https://github.com/danrevah/ngx-pipes/compare/v2.7.7...v2.7.8',
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#278-2022-01-21',
       },
     },
   },
