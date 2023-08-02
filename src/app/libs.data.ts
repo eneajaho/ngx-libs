@@ -41,7 +41,7 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
   {
     name: '@rx-angular/state',
     npmUrl: 'https://www.npmjs.com/package/@rx-angular/state',
-    githubUrl: 'https://github.com/rx-angular/rx-angular',
+    githubUrl: 'https://github.com/rx-angular/rx-angular/tree/main/libs/state',
     versionSupport: {
       '16': {
         libraryVersion: '16.0.0',
@@ -646,9 +646,9 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
     githubUrl: 'https://github.com/JsDaddy/ngx-mask',
     versionSupport: {
       '16': {
-        libraryVersion: '16.2.4',
+        libraryVersion: '16.2.5',
         support: true,
-        link: 'https://github.com/JsDaddy/ngx-mask/blob/develop/CHANGELOG.md#16242023-07-12',
+        link: 'https://github.com/JsDaddy/ngx-mask/blob/develop/CHANGELOG.md#16252023-07-24',
       },
       '15': {
         libraryVersion: '15.1.5',
@@ -704,7 +704,6 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
-
   {
     name: 'ngx-infinite-scroll',
     npmUrl: 'https://www.npmjs.com/package/ngx-infinite-scroll',
@@ -858,6 +857,819 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
         libraryVersion: '0.2.1',
         support: true,
         link: 'https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.2.1',
+      },
+    },
+  },
+  {
+    name: 'keycloak-angular',
+    npmUrl: 'https://www.npmjs.com/package/keycloak-angular',
+    githubUrl: 'https://github.com/mauriciovigolo/keycloak-angular',
+    versionSupport: {
+      '16': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v14.0.0',
+      },
+      '15': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v13.0.0',
+      },
+      '14': {
+        libraryVersion: '12.0.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v12.0.0',
+      },
+      '13': {
+        libraryVersion: '9.0.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v9.0.0',
+      },
+      '12': {
+        libraryVersion: '8.2.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v8.2.0',
+      },
+      '11': {
+        libraryVersion: '8.1.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v8.1.0',
+      },
+      '10': {
+        libraryVersion: '8.0.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/8.0.0',
+      },
+    },
+  },
+  {
+    name: 'ngx-mentions',
+    npmUrl: 'https://www.npmjs.com/package/ngx-mentions',
+    githubUrl: 'https://github.com/abhijit-chikane/ngx-mentions',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.2.0',
+        support: true,
+      },
+      '15': {
+        libraryVersion: '15.2.0',
+        support: true,
+      },
+      '14': {
+        libraryVersion: '14.2.0',
+        support: true,
+      },
+      '13': {
+        libraryVersion: '13.2.0',
+        support: true,
+      },
+      '12': {
+        libraryVersion: '12.2.0',
+        support: true,
+      },
+      '11': {
+        libraryVersion: '11.2.0',
+        support: true,
+      },
+    },
+  },
+  {
+    name: 'ngx-device-detector',
+    npmUrl: 'https://www.npmjs.com/package/ngx-device-detector',
+    githubUrl: 'https://github.com/AhsanAyaz/ngx-device-detector',
+    versionSupport: {
+      '16': {
+        libraryVersion: '6.0.0',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v6.0.0',
+      },
+      '15': {
+        libraryVersion: '5.0.0',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v5.0.0',
+      },
+      '14': {
+        libraryVersion: '4.0.0',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v4.0.0',
+      },
+      '13': {
+        libraryVersion: '3.0.0',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v3.0.0',
+      },
+      '12': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v2.1.0',
+      },
+      '11': {
+        libraryVersion: '2.0.5',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v2.0.5',
+      },
+      '10': {
+        libraryVersion: '1.4.5',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v1.4.5',
+      },
+      '9': {
+        libraryVersion: '1.4.1',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/1.4.1',
+      },
+      '8': {
+        libraryVersion: '1.3.5',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v1.3.5',
+      },
+      '7': {
+        libraryVersion: '1.3.3',
+        support: true,
+        link: 'https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v1.3.3',
+      },
+    },
+  },
+  {
+    name: 'ngx-echarts',
+    npmUrl: 'https://www.npmjs.com/package/ngx-echarts',
+    githubUrl: 'https://github.com/xieziyu/ngx-echarts',
+    versionSupport: {
+      '16': {
+        libraryVersion: 'v16.0.0',
+        support: true,
+        link: 'https://github.com/xieziyu/ngx-echarts/releases/tag/v16.0.0',
+      },
+      '15': {
+        libraryVersion: 'v15.0.3',
+        support: true,
+        link: 'https://github.com/xieziyu/ngx-echarts/releases/tag/v15.0.3',
+      },
+      '14': {
+        libraryVersion: 'v14.0.0',
+        support: true,
+        link: 'https://github.com/xieziyu/ngx-echarts/releases/tag/v14.0.0',
+      },
+    },
+  },
+  {
+    name: 'ng-mocks',
+    npmUrl: 'https://www.npmjs.com/package/ng-mocks',
+    githubUrl: 'https://github.com/help-me-mom/ng-mocks',
+    versionSupport: {
+      '16': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+        note: 'According to github docs , the current version is tested and can be used with Angular 5 to 16',
+      },
+      '15': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '14': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '13': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '12': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '11': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '10': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '9': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '8': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '7': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '6': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+      '5': {
+        libraryVersion: '14.11.0',
+        support: true,
+        link: 'https://github.com/help-me-mom/ng-mocks/releases/tag/v14.11.0',
+      },
+    },
+  },
+  {
+    name: '@iplab/ngx-file-upload',
+    npmUrl: 'https://www.npmjs.com/package/@iplab/ngx-file-upload',
+    githubUrl: 'https://github.com/pIvan/file-upload',
+    versionSupport: {
+      '16': {
+        libraryVersion: '16.0.0',
+        link: 'https://www.npmjs.com/package/@iplab/ngx-file-upload',
+        support: true,
+      },
+      '15': {
+        libraryVersion: '15.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-15.0.0',
+        support: true,
+      },
+      '14': {
+        libraryVersion: '14.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-14.0.0',
+        support: true,
+      },
+      '13': {
+        libraryVersion: '13.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-13.0.0',
+        support: true,
+      },
+      '12': {
+        libraryVersion: '12.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-12.0.0',
+        support: true,
+      },
+      '11': {
+        libraryVersion: '11.0.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-11.0.0',
+        support: true,
+      },
+      '10': {
+        libraryVersion: '1.5.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-1.5.0',
+        support: true,
+      },
+      '9': {
+        libraryVersion: '1.5.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-1.5.0',
+        support: true,
+      },
+      '8': {
+        libraryVersion: '1.5.0',
+        link: 'https://github.com/pIvan/file-upload/tree/support-1.5.0',
+        support: true,
+      },
+    },
+  },
+  {
+    name: 'angular-notifier',
+    npmUrl: 'https://www.npmjs.com/package/angular-notifier',
+    githubUrl: 'https://github.com/dominique-mueller/angular-notifier',
+    versionSupport: {
+      '10': {
+        libraryVersion: '8.0.0',
+        link: 'https://github.com/dominique-mueller/angular-notifier/releases/tag/8.0.0',
+        note: '',
+        support: true,
+      },
+      '11': {
+        libraryVersion: '9.0.0',
+        link: 'https://github.com/dominique-mueller/angular-notifier/releases/tag/9.0.0',
+        note: '',
+        support: true,
+      },
+      '12': {
+        libraryVersion: '10.0.0',
+        link: 'https://github.com/dominique-mueller/angular-notifier/releases/tag/10.0.0',
+        note: '',
+        support: true,
+      },
+      '13': {
+        libraryVersion: '11.0.0',
+        link: 'https://github.com/dominique-mueller/angular-notifier/releases/tag/11.0.0',
+        note: '',
+        support: true,
+      },
+      '14': {
+        libraryVersion: '12.0.0',
+        link: 'https://github.com/dominique-mueller/angular-notifier/releases/tag/12.0.0',
+        note: '',
+        support: true,
+      },
+      '15': {
+        libraryVersion: '13.0.0',
+        link: 'https://github.com/dominique-mueller/angular-notifier/releases/tag/13.0.0',
+        note: '',
+        support: true,
+      },
+      '16': {
+        libraryVersion: '14.0.0',
+        link: 'https://github.com/dominique-mueller/angular-notifier/releases/tag/14.0.0',
+        note: '',
+        support: true,
+      },
+    },
+  },
+  {
+    name: 'ngx-pipes',
+    npmUrl: 'https://www.npmjs.com/package/ngx-pipes',
+    githubUrl: 'https://github.com/danrevah/ngx-pipes',
+    versionSupport: {
+      '16': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
+      },
+      '15': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
+      },
+      '14': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
+      },
+      '13': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
+      },
+      '12': {
+        libraryVersion: '2.7.8',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#278-2022-01-21',
+      },
+    },
+  },
+  {
+    name: '@testing-library/angular',
+    npmUrl: 'https://www.npmjs.com/package/@testing-library/angular',
+    githubUrl: 'https://github.com/testing-library/angular-testing-library',
+    versionSupport: {
+      '16': {
+        libraryVersion: '14.2.0',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v14.2.0',
+      },
+      '15': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v14.0.0',
+        note: 'also supports 13.0.2',
+      },
+      '14': {
+        libraryVersion: '12.3.0',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v12.3.0',
+      },
+      '13': {
+        libraryVersion: '11.0.4',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v11.0.4',
+      },
+      '12': {
+        libraryVersion: '10.11.1',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v10.11.1',
+      },
+      '11': {
+        libraryVersion: '10.6.0',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v10.6.0',
+      },
+      '10': {
+        libraryVersion: '10.1.4',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v10.1.4',
+      },
+      '9': {
+        libraryVersion: '9.5.0',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v9.5.0',
+      },
+      '8': {
+        libraryVersion: '8.2.0',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v8.2.0',
+      },
+    },
+  },
+  {
+    name: '@ngbmodule/material-carousel',
+    npmUrl: 'https://www.npmjs.com/package/@ngbmodule/material-carousel',
+    githubUrl: 'https://github.com/gabrielbusarello/material2-carousel',
+    versionSupport: {
+      '16': {
+        support: false,
+      },
+      '15': {
+        support: false,
+      },
+      '14': {
+        support: 'progress',
+        link: 'https://github.com/gabrielbusarello/material2-carousel/pull/42',
+      },
+      '13': {
+        support: 'progress',
+        link: 'https://github.com/gabrielbusarello/material2-carousel/pull/36',
+      },
+      '12': {
+        support: 'progress',
+        link: 'https://github.com/gabrielbusarello/material2-carousel/pull/22',
+      },
+      '11': {
+        libraryVersion: '0.7.2',
+        support: true,
+        link: 'https://github.com/gabrielbusarello/material2-carousel/releases/tag/v0.7.0',
+      },
+    },
+  },
+  {
+    name: '@swimlane/ngx-charts',
+    npmUrl: 'https://www.npmjs.com/package/@swimlane/ngx-charts',
+    githubUrl: 'https://github.com/swimlane/ngx-charts',
+    versionSupport: {
+      '16': {
+        support: false,
+      },
+      '15': {
+        support: 'progress',
+        link: 'https://github.com/swimlane/ngx-charts/pull/1855',
+      },
+      '14': {
+        support: 'progress',
+        link: 'https://github.com/swimlane/ngx-charts/pull/1855',
+      },
+      '13': {
+        libraryVersion: '20.4.1',
+        support: true,
+        link: 'https://github.com/swimlane/ngx-charts/releases/tag/20.4.1',
+      },
+    },
+  },
+  {
+    name: 'angular-gridster2',
+    npmUrl: 'https://www.npmjs.com/package/angular-gridster2',
+    githubUrl: 'https://github.com/tiberiuzuld/angular-gridster2',
+    versionSupport: {
+      '16': {
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v16.0.0',
+        libraryVersion: '16.0.0',
+      },
+      '15': {
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v15.0.0',
+        libraryVersion: '15.0.0',
+      },
+      '14': {
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v14.0.0',
+        libraryVersion: '14.0.0',
+      },
+      '13': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v13.0.0',
+      },
+      '12': {
+        libraryVersion: '12.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v12.0.0',
+      },
+      '11': {
+        libraryVersion: '11.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v11.0.0',
+      },
+      '10': {
+        libraryVersion: '10.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v10.0.0',
+      },
+      '9': {
+        libraryVersion: '9.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v9.0.0',
+      },
+      '8': {
+        libraryVersion: '8.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v8.0.0',
+      },
+      '7': {
+        libraryVersion: '7.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v7.0.0',
+      },
+      '6': {
+        libraryVersion: '6.0.0',
+        support: true,
+        link: 'https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v6.0.0',
+      },
+    },
+  },
+  {
+    name: '@angular/fire',
+    npmUrl: 'https://www.npmjs.com/package/@angular/fire',
+    githubUrl: 'https://github.com/angular/angularfire',
+    versionSupport: {
+      '16': {
+        libraryVersion: '7.6.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/7.6.0',
+      },
+      '15': {
+        libraryVersion: '7.5.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/7.5.0',
+      },
+      '14': {
+        libraryVersion: '7.4.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/7.4.0',
+      },
+      '13': {
+        libraryVersion: '7.2.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/7.2.0',
+      },
+      '12': {
+        libraryVersion: '6.1.5',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/6.1.5',
+      },
+      '11': {
+        libraryVersion: '6.1.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/6.1.0',
+      },
+      '10': {
+        libraryVersion: '6.0.1',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/6.0.1',
+      },
+      '9': {
+        libraryVersion: '6.0.0',
+        support: 'partial',
+        link: 'https://github.com/angular/angularfire/releases/tag/6.0.0',
+      },
+      '8': {
+        libraryVersion: '6.0.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/6.0.0',
+      },
+    },
+  },
+  {
+    name: '@kolkov/angular-editor',
+    npmUrl: 'https://www.npmjs.com/package/@kolkov/angular-editor',
+    githubUrl: 'https://github.com/kolkov/angular-editor',
+    versionSupport: {
+      '16': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '15': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '14': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '13': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '12': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '11': {
+        libraryVersion: '1.1.4',
+        support: 'partial',
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v1.1.4',
+        note: 'Can be used with Angular 11.0.0',
+      },
+      '10': {
+        libraryVersion: '1.1.2',
+        support: 'partial',
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v1.1.2',
+        note: 'Can be used with Angular 10.0.0',
+      },
+      '9': {
+        libraryVersion: '1.0.3',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v1.0.3',
+      },
+      '8': {
+        libraryVersion: '1.0.0-beta.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v1.0.0-beta.0',
+      },
+    },
+  },
+  {
+    name: '@ngx-papaparse',
+    npmUrl: 'https://www.npmjs.com/package/ngx-papaparse',
+    githubUrl: 'https://github.com/alberthaff/ngx-papaparse',
+    versionSupport: {
+      '16': {
+        libraryVersion: '7.0.0',
+        support: true,
+        link: undefined,
+      },
+      '15': {
+        libraryVersion: '7.0.0',
+        support: true,
+        link: undefined,
+      },
+      '14': {
+        libraryVersion: '6.x.x',
+        support: true,
+        link: undefined,
+      },
+      '13': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '12': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '11': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '10': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '9': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '8': {
+        libraryVersion: '4.x.x',
+        support: true,
+        link: undefined,
+      },
+      '7': {
+        libraryVersion: '3.x.x',
+        support: true,
+        link: undefined,
+      },
+      '6': {
+        libraryVersion: '3.x.x',
+        support: true,
+        link: undefined,
+      },
+      '5': {
+        libraryVersion: '2.1.3',
+        support: true,
+        link: undefined,
+      },
+      '4': {
+        libraryVersion: '1.2.5',
+        support: true,
+        link: undefined,
+      },
+      '3': {
+        libraryVersion: '1.2.5',
+        support: true,
+        link: undefined,
+      },
+      '2': {
+        libraryVersion: '1.2.5',
+        support: true,
+        link: undefined,
+      },
+    },
+  },
+  {
+    name: '@coreui/angular',
+    npmUrl: 'https://www.npmjs.com/package/@coreui/angular',
+    githubUrl: 'https://github.com/coreui/coreui-angular',
+    versionSupport: {
+      '16': {
+        libraryVersion: '4.5.10',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/4.5.10',
+      },
+      '15': {
+        libraryVersion: '4.3.7',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/4.3.7',
+      },
+      '14': {
+        libraryVersion: '4.1.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/4.1.0',
+      },
+      '13': {
+        libraryVersion: '4.0.0-alpha.3',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/4.0.0-alpha.3',
+      },
+      '12': {
+        libraryVersion: '2.11.2',
+        support: 'partial',
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.11.2',
+      },
+      '11': {
+        libraryVersion: '2.11.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.11.0',
+      },
+      '10': {
+        libraryVersion: '2.10.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.10.0',
+      },
+      '9': {
+        libraryVersion: '2.9.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.9.0',
+      },
+      '8': {
+        libraryVersion: '2.5.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.5.0',
+      },
+      '7': {
+        libraryVersion: '2.2.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.2.0',
+      },
+    },
+  },
+  {
+    name: 'angular-split',
+    npmUrl: 'https://www.npmjs.com/package/angular-split',
+    githubUrl: 'https://github.com/angular-split/angular-split',
+    versionSupport: {
+      '15': {
+        libraryVersion: '15.0.0',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/pull/341',
+      },
+      '14': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: undefined,
+      },
+      '13': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: undefined,
+      },
+      '12': {
+        libraryVersion: '5.0.0-beta.1',
+        support: 'partial',
+        link: undefined,
+      },
+      '11': {
+        libraryVersion: '5.0.0-beta.2',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/issues/278',
+      },
+      '10': {
+        libraryVersion: '5.0.0-beta.0',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/issues/256',
+      },
+      '9': {
+        libraryVersion: '3.0.3',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/issues/218',
+      },
+      '8': {
+        libraryVersion: '3.0.2',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/issues/175',
       },
     },
   },

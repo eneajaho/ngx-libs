@@ -10,7 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ReplaceStringPipe } from './replace-string.pipe';
-import { StateService } from './state.service';
+import { StateService } from './services/state.service';
 
 @Component({
   selector: 'app-support-table',
@@ -89,7 +89,7 @@ import { StateService } from './state.service';
               ❌ Not Supported
               <a
                 mat-button
-                [href]="row.githubUrl+'/issues/new?title=chore:version'"
+                [href]="row.githubUrl + '/issues/new?title=chore:version'"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -125,6 +125,8 @@ import { StateService } from './state.service';
         <tr mat-row *matRowDef="let row; columns: displayedColumns()"></tr>
       </table>
     </div>
+
+    <h3 style="margin-top: 20px">{{ state.data().length }} Libraries 🚀</h3>
   `,
   styles: [
     `
