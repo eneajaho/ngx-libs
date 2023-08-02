@@ -1381,4 +1381,296 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: '@angular/fire',
+    npmUrl: 'https://www.npmjs.com/package/@angular/fire',
+    githubUrl: 'https://github.com/angular/angularfire',
+    versionSupport: {
+      '16': {
+        libraryVersion: '7.6.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/7.6.0',
+      },
+      '15': {
+        libraryVersion: '7.5.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/7.5.0',
+      },
+      '14': {
+        libraryVersion: '7.4.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/7.4.0',
+      },
+      '13': {
+        libraryVersion: '7.2.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/7.2.0',
+      },
+      '12': {
+        libraryVersion: '6.1.5',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/6.1.5',
+      },
+      '11': {
+        libraryVersion: '6.1.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/6.1.0',
+      },
+      '10': {
+        libraryVersion: '6.0.1',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/6.0.1',
+      },
+      '9': {
+        libraryVersion: '6.0.0',
+        support: 'partial',
+        link: 'https://github.com/angular/angularfire/releases/tag/6.0.0',
+      },
+      '8': {
+        libraryVersion: '6.0.0',
+        support: true,
+        link: 'https://github.com/angular/angularfire/releases/tag/6.0.0',
+      },
+    },
+  },
+  {
+    name: '@kolkov/angular-editor',
+    npmUrl: 'https://www.npmjs.com/package/@kolkov/angular-editor',
+    githubUrl: 'https://github.com/kolkov/angular-editor',
+    versionSupport: {
+      '16': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '15': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '14': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '13': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '12': {
+        libraryVersion: '2.1.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v2.1.0',
+      },
+      '11': {
+        libraryVersion: '1.1.4',
+        support: 'partial',
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v1.1.4',
+        note: 'Can be used with Angular 11.0.0',
+      },
+      '10': {
+        libraryVersion: '1.1.2',
+        support: 'partial',
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v1.1.2',
+        note: 'Can be used with Angular 10.0.0',
+      },
+      '9': {
+        libraryVersion: '1.0.3',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v1.0.3',
+      },
+      '8': {
+        libraryVersion: '1.0.0-beta.0',
+        support: true,
+        link: 'https://github.com/kolkov/angular-editor/releases/tag/v1.0.0-beta.0',
+      },
+    },
+  },
+  {
+    name: '@ngx-papaparse',
+    npmUrl: 'https://www.npmjs.com/package/ngx-papaparse',
+    githubUrl: 'https://github.com/alberthaff/ngx-papaparse',
+    versionSupport: {
+      '16': {
+        libraryVersion: '7.0.0',
+        support: true,
+        link: undefined,
+      },
+      '15': {
+        libraryVersion: '7.0.0',
+        support: true,
+        link: undefined,
+      },
+      '14': {
+        libraryVersion: '6.x.x',
+        support: true,
+        link: undefined,
+      },
+      '13': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '12': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '11': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '10': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '9': {
+        libraryVersion: '5.x.x',
+        support: true,
+        link: undefined,
+      },
+      '8': {
+        libraryVersion: '4.x.x',
+        support: true,
+        link: undefined,
+      },
+      '7': {
+        libraryVersion: '3.x.x',
+        support: true,
+        link: undefined,
+      },
+      '6': {
+        libraryVersion: '3.x.x',
+        support: true,
+        link: undefined,
+      },
+      '5': {
+        libraryVersion: '2.1.3',
+        support: true,
+        link: undefined,
+      },
+      '4': {
+        libraryVersion: '1.2.5',
+        support: true,
+        link: undefined,
+      },
+      '3': {
+        libraryVersion: '1.2.5',
+        support: true,
+        link: undefined,
+      },
+      '2': {
+        libraryVersion: '1.2.5',
+        support: true,
+        link: undefined,
+      },
+    },
+  },
+  {
+    name: '@coreui/angular',
+    npmUrl: 'https://www.npmjs.com/package/@coreui/angular',
+    githubUrl: 'https://github.com/coreui/coreui-angular',
+    versionSupport: {
+      '16': {
+        libraryVersion: '4.5.10',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/4.5.10',
+      },
+      '15': {
+        libraryVersion: '4.3.7',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/4.3.7',
+      },
+      '14': {
+        libraryVersion: '4.1.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/4.1.0',
+      },
+      '13': {
+        libraryVersion: '4.0.0-alpha.3',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/4.0.0-alpha.3',
+      },
+      '12': {
+        libraryVersion: '2.11.2',
+        support: 'partial',
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.11.2',
+      },
+      '11': {
+        libraryVersion: '2.11.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.11.0',
+      },
+      '10': {
+        libraryVersion: '2.10.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.10.0',
+      },
+      '9': {
+        libraryVersion: '2.9.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.9.0',
+      },
+      '8': {
+        libraryVersion: '2.5.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.5.0',
+      },
+      '7': {
+        libraryVersion: '2.2.0',
+        support: true,
+        link: 'https://github.com/coreui/coreui-angular/releases/tag/v2.2.0',
+      },
+    },
+  },
+  {
+    name: 'angular-split',
+    npmUrl: 'https://www.npmjs.com/package/angular-split',
+    githubUrl: 'https://github.com/angular-split/angular-split',
+    versionSupport: {
+      '15': {
+        libraryVersion: '15.0.0',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/pull/341',
+      },
+      '14': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: undefined,
+      },
+      '13': {
+        libraryVersion: '13.0.0',
+        support: true,
+        link: undefined,
+      },
+      '12': {
+        libraryVersion: '5.0.0-beta.1',
+        support: 'partial',
+        link: undefined,
+      },
+      '11': {
+        libraryVersion: '5.0.0-beta.2',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/issues/278',
+      },
+      '10': {
+        libraryVersion: '5.0.0-beta.0',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/issues/256',
+      },
+      '9': {
+        libraryVersion: '3.0.3',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/issues/218',
+      },
+      '8': {
+        libraryVersion: '3.0.2',
+        support: true,
+        link: 'https://github.com/angular-split/angular-split/issues/175',
+      },
+    },
+  },
 ];
