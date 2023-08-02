@@ -32,9 +32,6 @@ import { ContributorsStore } from './store/contributors.store';
                 height="40"
                 [alt]="contributor.login"
               />
-              <span class="contributions-count">
-                {{ contributor.contributions }}
-              </span>
             </a>
           </div>
         </ng-template>
@@ -72,27 +69,10 @@ import { ContributorsStore } from './store/contributors.store';
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 4rem;
-        position: relative;
 
         img {
           object-fit: cover;
           border-radius: 4rem;
-        }
-
-        .contributions-count {
-          position: absolute;
-          bottom: -0.25rem;
-          right: -0.25rem;
-          background-color: #000;
-          border-radius: 50%;
-          width: 1.5rem;
-          height: 1.5rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 0.75rem;
-          font-weight: 600;
-          color: #fff;
         }
       }
     `,
