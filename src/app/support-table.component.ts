@@ -125,6 +125,8 @@ import { StateService } from './services/state.service';
         <tr mat-row *matRowDef="let row; columns: displayedColumns()"></tr>
       </table>
     </div>
+
+    <h3 style="margin-top: 20px">{{ state.data().length }} Libraries 🚀</h3>
   `,
   styles: [
     `
