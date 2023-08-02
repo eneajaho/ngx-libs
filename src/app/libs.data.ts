@@ -1181,4 +1181,89 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+  {
+    name: 'ngx-pipes',
+    npmUrl: 'https://www.npmjs.com/package/ngx-pipes',
+    githubUrl: 'https://github.com/danrevah/ngx-pipes',
+    versionSupport: {
+      '16': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
+      },
+      '15': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
+      },
+      '14': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
+      },
+      '13': {
+        libraryVersion: '3.2.2',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07',
+      },
+      '12': {
+        libraryVersion: '2.7.8',
+        support: true,
+        link: 'https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#278-2022-01-21',
+      },
+    },
+  },
+  {
+    name: '@testing-library/angular',
+    npmUrl: 'https://www.npmjs.com/package/@testing-library/angular',
+    githubUrl: 'https://github.com/testing-library/angular-testing-library',
+    versionSupport: {
+      '16': {
+        libraryVersion: '14.2.0',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v14.2.0',
+      },
+      '15': {
+        libraryVersion: '14.0.0',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v14.0.0',
+        note: 'also supports 13.0.2',
+      },
+      '14': {
+        libraryVersion: '12.3.0',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v12.3.0',
+      },
+      '13': {
+        libraryVersion: '11.0.4',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v11.0.4',
+      },
+      '12': {
+        libraryVersion: '10.11.1',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v10.11.1',
+      },
+      '11': {
+        libraryVersion: '10.6.0',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v10.6.0',
+      },
+      '10': {
+        libraryVersion: '10.1.4',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v10.1.4',
+      },
+      '9': {
+        libraryVersion: '9.5.0',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v9.5.0',
+      },
+      '8': {
+        libraryVersion: '8.2.0',
+        support: true,
+        link: 'https://github.com/testing-library/angular-testing-library/releases/tag/v8.2.0',
+      },
+    },
+  },
 ];
