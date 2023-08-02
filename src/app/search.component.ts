@@ -33,7 +33,10 @@ import { StateService } from './services/state.service';
         <mat-label>Angular Versions</mat-label>
         <mat-select [formControl]="versionsControl" multiple>
           <mat-option
-            *ngFor="let version of state.allAngularVersions"
+            *ngFor="
+              let version of state.allAngularVersions;
+              trackBy: state.trackItems
+            "
             [value]="version"
           >
             v{{ version }}

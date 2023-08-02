@@ -80,4 +80,13 @@ export class StateService {
       this.router.navigate([], { queryParams, replaceUrl: true });
     });
   }
+
+  /**
+   *
+   * @param index of item
+   * @param item
+   */
+  public trackItems<T>(index: number, item: T): number {
+    return index;
+  }
 }
