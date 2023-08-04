@@ -1673,4 +1673,26 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+   {
+    name: 'ngx-confetti-explosion',
+    npmUrl: 'https://www.npmjs.com/package/ngx-confetti-explosion',
+    githubUrl: 'https://github.com/ChellappanRajan/ngx-confetti-explosion',
+    versionSupport: {
+      '16': {
+        libraryVersion: '1.0.0',
+        support: true,
+        link: undefined,
+      },
+      '15': {
+        libraryVersion: '1.0.0',
+        support: true,
+        link: undefined,
+      },
+      '14': {
+        libraryVersion: '1.0.0',
+        support: true,
+        link: undefined,
+      }
+    },
+  },
 ];
