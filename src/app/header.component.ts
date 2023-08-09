@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
@@ -19,6 +20,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
       </div>
       <span class="example-spacer"></span>
       <div style="display: flex; align-items:center; gap: 8px;">
+        <button mat-button type="button" (click)="checkPackageJson()">
+          <mat-icon>assignment_turned_in</mat-icon>
+          Check package.json
+        </button>
         <a
           mat-button
           href="https://github.com/eneajaho/ngx-libs/blob/master/src/app/libs.data.ts"
@@ -53,6 +58,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
       .example-spacer {
         flex: 1 1 auto;
       }
+
       @media (max-width: 640px) {
         .toolbar {
           flex-direction: column;
@@ -63,4 +69,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   ],
   imports: [MatToolbarModule, MatButtonModule, MatIconModule],
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  dialog = inject(MatDialog);
+
+  async checkPackageJson() {
+    const { CheckPackageJsonModalComponent } = await import(
+      './check-package-json.modal'
+    );
+    this.dialog.open(CheckPackageJsonModalComponent, {
+      minWidth: 500,
+    });
+  }
+}
