@@ -1626,6 +1626,7 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+
   {
     name: 'angular-split',
     npmUrl: 'https://www.npmjs.com/package/angular-split',
@@ -1670,6 +1671,56 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
         libraryVersion: '3.0.2',
         support: true,
         link: 'https://github.com/angular-split/angular-split/issues/175',
+      },
+    },
+  },
+  {
+    name: '@danielmoncada/angular-datetime-picker',
+    npmUrl:
+      'https://www.npmjs.com/package/@danielmoncada/angular-datetime-picker',
+    githubUrl: 'https://github.com/danielmoncada/date-time-picker',
+    versionSupport: {
+      '10': {
+        libraryVersion: '10.0.0',
+        link: 'https://github.com/danielmoncada/date-time-picker/commit/11fe1ab9d2dd9091491ca02998234a7836abd80d',
+        note: '',
+        support: true,
+      },
+      '11': {
+        libraryVersion: '11.0.0',
+        link: 'https://github.com/danielmoncada/date-time-picker/commit/3e525bf7f6b616c90cbd28781c875ef8672d0cfc',
+        note: '',
+        support: true,
+      },
+      '12': {
+        libraryVersion: '12.1.0',
+        link: 'https://github.com/danielmoncada/date-time-picker/commit/8d67db835aadaada5cbed3364e2d8f8c02971135',
+        note: '',
+        support: true,
+      },
+      '13': {
+        libraryVersion: '14.0.0',
+        link: 'https://github.com/danielmoncada/date-time-picker/commit/549e249d28e70af549418b3c6ebe014a806a4410',
+        note: '',
+        support: true,
+      },
+      '14': {
+        libraryVersion: '14.1.0',
+        link: 'https://github.com/danielmoncada/date-time-picker/commit/d9b63ccf6a2e3e4eead059b913fdc9d3176cfdda',
+        note: '',
+        support: true,
+      },
+      '15': {
+        libraryVersion: '15.0.0',
+        link: 'https://github.com/danielmoncada/date-time-picker/commit/a0d9a6b9df489123fe24a4ef647913372fdaf93c',
+        note: '',
+        support: true,
+      },
+      '16': {
+        libraryVersion: '16.0.1',
+        link: 'https://github.com/danielmoncada/date-time-picker/commit/066ab6a09f47ea3ab6da09da91668a5d0684dfcc',
+        note: '',
+        support: true,
       },
     },
   },
