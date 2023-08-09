@@ -1674,6 +1674,7 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+
   {
     name: '@danielmoncada/angular-datetime-picker',
     npmUrl:
@@ -1721,6 +1722,49 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
         link: 'https://github.com/danielmoncada/date-time-picker/commit/066ab6a09f47ea3ab6da09da91668a5d0684dfcc',
         note: '',
         support: true,
+      },
+    },
+  },
+  {
+    name: '@katoid/angular-grid-layout',
+    npmUrl: 'https://www.npmjs.com/package/@katoid/angular-grid-layout',
+    githubUrl: 'https://github.com/katoid/angular-grid-layout',
+    versionSupport: {
+      '11': {
+        libraryVersion: '0.2.0',
+        link: 'https://github.com/katoid/angular-grid-layout/releases/tag/v0.2.0',
+        note: '',
+        support: true,
+      },
+      '12': {
+        libraryVersion: '1.2.0',
+        link: 'https://github.com/katoid/angular-grid-layout/releases/tag/v1.2.0',
+        note: '',
+        support: true,
+      },
+      '13': {
+        libraryVersion: '1.2.0',
+        link: 'https://github.com/katoid/angular-grid-layout/releases/tag/v1.2.0',
+        note: '',
+        support: 'partial',
+      },
+      '14': {
+        libraryVersion: '2.2.0',
+        link: 'https://github.com/katoid/angular-grid-layout/releases/tag/v2.2.0',
+        note: '',
+        support: true,
+      },
+      '15': {
+        libraryVersion: '2.2.0',
+        link: 'https://github.com/katoid/angular-grid-layout/releases/tag/v2.2.0',
+        note: '',
+        support: 'partial',
+      },
+      '16': {
+        libraryVersion: '2.2.0',
+        link: 'https://github.com/katoid/angular-grid-layout/releases/tag/v2.2.0',
+        note: '',
+        support: 'partial',
       },
     },
   },
