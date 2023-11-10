@@ -298,6 +298,11 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
     npmUrl: 'https://www.npmjs.com/package/@perfectmemory/ngx-contextmenu',
     githubUrl: 'https://github.com/PerfectMemory/ngx-contextmenu',
     versionSupport: {
+      '17': {
+        libraryVersion: '17.0.0',
+        support: true,
+        link: 'https://github.com/PerfectMemory/ngx-contextmenu/releases/tag/v17.0.0',
+      },
       '16': {
         libraryVersion: '16.0.1',
         support: true,
