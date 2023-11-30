@@ -1730,6 +1730,7 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
       },
     },
   },
+
   {
     name: '@katoid/angular-grid-layout',
     npmUrl: 'https://www.npmjs.com/package/@katoid/angular-grid-layout',
@@ -1770,6 +1771,25 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
         link: 'https://github.com/katoid/angular-grid-layout/releases/tag/v2.2.0',
         note: '',
         support: 'partial',
+      },
+    },
+  },
+  {
+    name: '@layout-projection/angular',
+    npmUrl: 'https://www.npmjs.com/package/@layout-projection/angular',
+    githubUrl: 'https://github.com/TheNightmareX/layout-projection',
+    versionSupport: {
+      '15': {
+        libraryVersion: '0.13.0',
+        link: '',
+        note: '',
+        support: true,
+      },
+      '16': {
+        libraryVersion: '0.14.0',
+        link: '',
+        note: '',
+        support: true,
       },
     },
   },
