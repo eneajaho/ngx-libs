@@ -870,6 +870,11 @@ export const LIBRARY_SUPPORT_DATA: LibrarySupport[] = [
     npmUrl: 'https://www.npmjs.com/package/keycloak-angular',
     githubUrl: 'https://github.com/mauriciovigolo/keycloak-angular',
     versionSupport: {
+      '17': {
+        libraryVersion: '15.0.0',
+        support: true,
+        link: 'https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v15.0.0',
+      },
       '16': {
         libraryVersion: '14.0.0',
         support: true,
