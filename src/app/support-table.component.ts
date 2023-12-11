@@ -123,6 +123,13 @@ import { StateService } from './services/state.service';
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns()"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns()"></tr>
+
+        <!-- Row shown when there is no matching data. -->
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell" colspan="7">
+            No package matching the filter "{{ state.searchFilter() }}" 🫤
+          </td>
+        </tr>
       </table>
     </div>
 
@@ -164,6 +171,11 @@ import { StateService } from './services/state.service';
 
       .mat-mdc-row:hover .mat-mdc-cell {
         background-color: #f5f5f5;
+      }
+
+      .mat-mdc-no-data-row td {
+        padding: 1rem;
+        text-align: center;
       }
     `,
   ],
