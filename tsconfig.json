@@ -6,6 +6,7 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
+    "resolveJsonModule": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -20,7 +21,7 @@
     "useDefineForClassFields": false,
     "lib": ["ES2022", "dom"],
     "paths": {
-      "libs/models": ["libs/models/src/index.ts"],
+      "@libs/models": ["libs/models/src/index.ts"],
       "plugin": ["plugin/src/index.ts"]
     }
   },

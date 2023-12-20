@@ -1,7 +1,10 @@
+import type {
+  LibraryAngularVersionSupport,
+  LibrarySupport,
+} from '@libs/models';
 import { formatFiles, Tree } from '@nx/devkit';
 import { tsquery } from '@phenomnomnominal/tsquery';
 import { prompt } from 'enquirer';
-import type { LibraryAngularVersionSupport, LibrarySupport } from 'libs/models';
 import { isStringLiteral } from 'typescript';
 import type { NewLibGeneratorSchema } from './schema';
 

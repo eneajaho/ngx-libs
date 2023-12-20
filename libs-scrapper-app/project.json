@@ -1,0 +1,71 @@
+{
+  "name": "libs-scrapper-app",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs-scrapper-app/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "platform": "node",
+        "outputPath": "dist/libs-scrapper-app",
+        "format": ["cjs"],
+        "bundle": false,
+        "main": "libs-scrapper-app/src/main.ts",
+        "tsConfig": "libs-scrapper-app/tsconfig.app.json",
+        "assets": ["src/assets/library-support-data.json"],
+        "generatePackageJson": true,
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "esbuildOptions": {
+            "sourcemap": false,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        }
+      }
+    },
+    "extract": {
+      "command": "node ./dist/libs-scrapper-app/main.js",
+      "dependsOn": ["build"]
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "libs-scrapper-app:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "libs-scrapper-app:build:development"
+        },
+        "production": {
+          "buildTarget": "libs-scrapper-app:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs-scrapper-app/jest.config.ts"
+      }
+    }
+  },
+  "tags": []
+}

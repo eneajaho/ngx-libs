@@ -1,26 +1,31 @@
 import { PlatformLocation } from '@angular/common';
 import { computed, effect, inject, Injectable, signal } from '@angular/core';
 import { Router } from '@angular/router';
-import { LIBRARY_SUPPORT_DATA } from '../libs.data';
-import { getAllAngularVersionsFromLibrarySupportData } from '../utils';
+import { ANGULAR_VERSIONS, LibrarySupport } from '@libs/models';
 
 type SearchQueryParams = {
   search?: string;
   versions?: string;
 };
 
-const ALL_ANGULAR_VERSIONS =
-  getAllAngularVersionsFromLibrarySupportData(LIBRARY_SUPPORT_DATA);
+const getAllAngularVersions: () => Promise<LibrarySupport[]> = () =>
+  import('../../assets/library-support-data.json').then(
+    (x) => (x as any).default as LibrarySupport[]
+  );
+
+// sort from biggest to smallest
+const ALL_ANGULAR_VERSIONS = ANGULAR_VERSIONS.map((x) => x + '');
 
 @Injectable({ providedIn: 'root' })
 export class StateService {
-  allAngularVersions = ALL_ANGULAR_VERSIONS;
   // select 3 versions by default
   versionsToShow = signal(ALL_ANGULAR_VERSIONS.slice(0, 5));
 
+  allAngularVersions = ALL_ANGULAR_VERSIONS;
+
   searchFilter = signal('');
 
-  data = signal(LIBRARY_SUPPORT_DATA);
+  data = signal<LibrarySupport[]>([]);
 
   filteredData = computed(() => {
     const searchFilter = this.searchFilter(); // ngx-toastr, ngx-clipboard, etc.
@@ -44,16 +49,14 @@ export class StateService {
   platformLocation = inject(PlatformLocation);
   router = inject(Router);
 
-  sanitizeVersions(
-    unsafeInput: string | null,
-    validVersions: string[] = this.allAngularVersions
-  ) {
+  sanitizeVersions(unsafeInput: string | null) {
     const maybeCSV = unsafeInput || '';
     const maybeVersions = maybeCSV
       .split(',')
       .map((v) => v.trim())
       .filter(Boolean);
-    return maybeVersions.filter((v) => validVersions.includes(v));
+
+    return maybeVersions.filter((v) => this.allAngularVersions.includes(v));
   }
 
   constructor() {
@@ -84,6 +87,10 @@ export class StateService {
         queryParams.versions = versionsFilter;
       }
       this.router.navigate([], { queryParams, replaceUrl: true });
+    });
+
+    getAllAngularVersions().then((x) => {
+      this.data.set(x);
     });
   }
 

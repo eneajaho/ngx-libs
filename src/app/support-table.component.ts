@@ -30,10 +30,18 @@ import { StateService } from './services/state.service';
             </div>
           </th>
           <td mat-cell *matCellDef="let row">
-            <a mat-button color="primary" [href]="row.npmUrl" target="_blank">
-              {{ row.name }}
-              <mat-icon>link</mat-icon>
-            </a>
+            <div
+              style="display: flex; justify-content:space-between; align-items:center"
+            >
+              <a mat-button color="primary" [href]="row.npmUrl" target="_blank">
+                {{ row.name }}
+                <mat-icon>link</mat-icon>
+              </a>
+
+              <span *ngIf="row.automated" matTooltip="Automated checks">
+                🤖
+              </span>
+            </div>
           </td>
         </ng-container>
         <ng-container matColumnDef="githubUrl">
@@ -86,7 +94,16 @@ import { StateService } from './services/state.service';
             <ng-container
               *ngIf="row.versionSupport[version]?.support === false"
             >
-              ❌ Not Supported
+              <a
+                mat-button
+                color="primary"
+                [href]="row.githubUrl"
+                target="_blank"
+                matTooltip="Not Supported"
+              >
+                ❌
+              </a>
+
               <a
                 mat-button
                 [href]="row.githubUrl + '/issues/new?title=chore:version'"
@@ -111,7 +128,12 @@ import { StateService } from './services/state.service';
                 target="_blank"
                 [matTooltip]="row.versionSupport[version]?.note"
               >
-                🧪 Partial ({{ row.versionSupport[version]?.libraryVersion }})
+                🧪 Partial
+                <ng-container
+                  *ngIf="row.versionSupport[version]?.libraryVersion"
+                >
+                  ({{ row.versionSupport[version]?.libraryVersion }})
+                </ng-container>
               </a>
             </ng-container>
 

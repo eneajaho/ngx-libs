@@ -9,7 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import type { LibraryAngularVersionSupport } from 'libs/models';
+import type { LibraryAngularVersionSupport } from '@libs/models';
 import { ReplaceStringPipe } from './replace-string.pipe';
 import { StateService } from './services/state.service';
 
@@ -43,7 +43,7 @@ import { StateService } from './services/state.service';
           <mat-card-content>
             <table style="width:100%">
               <tr>
-                <th>Angular Version</th>
+                <th>Ng Version</th>
                 <th>Support</th>
                 <th>Library Version</th>
               </tr>
@@ -82,7 +82,10 @@ import { StateService } from './services/state.service';
                       target="_blank"
                       [matTooltip]="item.note || ''"
                     >
-                      Partial ({{ item.libraryVersion }})
+                      Partial
+                      <ng-container *ngIf="item.libraryVersion">
+                        ({{ item.libraryVersion }})
+                      </ng-container>
                     </a>
                   </ng-container>
                   <ng-container *ngIf="item.support === false">
