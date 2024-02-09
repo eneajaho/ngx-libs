@@ -32,12 +32,16 @@ import { StateService } from './services/state.service';
       <mat-form-field appearance="outline">
         <mat-label>Angular Versions</mat-label>
         <mat-select [formControl]="versionsControl" multiple>
+          <mat-option [value]="allOption" (click)="toggleAllVersions()">
+            All
+          </mat-option>
           <mat-option
             *ngFor="
               let version of state.allAngularVersions;
               trackBy: state.trackItems
             "
             [value]="version"
+            (click)="togglePerSelection()"
           >
             v{{ version }}
           </mat-option>
@@ -81,6 +85,7 @@ import { StateService } from './services/state.service';
 })
 export class SearchComponent {
   state = inject(StateService);
+  allOption = 'all';
 
   searchControl = new FormControl<string>('', { nonNullable: true });
   versionsControl = new FormControl<string[]>([], { nonNullable: true });
@@ -90,8 +95,11 @@ export class SearchComponent {
 
     this.versionsControl.valueChanges
       .pipe(takeUntilDestroyed())
-      .subscribe((value) => {
-        this.state.versionsToShow.set(value);
+      .subscribe((values: string[]) => {
+        if (values.includes(this.allOption)) {
+          values = values.filter((value) => value !== this.allOption);
+        }
+        this.state.versionsToShow.set(values);
       });
 
     this.searchControl.valueChanges
@@ -102,5 +110,33 @@ export class SearchComponent {
 
     // update the search input value on state change
     effect(() => this.searchControl.setValue(this.state.searchFilter()));
+  }
+
+  toggleAllVersions() {
+    if (this.versionsControl.value.includes(this.allOption)) {
+      this.versionsControl.patchValue([
+        this.allOption,
+        ...this.state.allAngularVersions,
+      ]);
+    } else {
+      this.versionsControl.patchValue([]);
+    }
+  }
+
+  togglePerSelection() {
+    const values: string[] = this.versionsControl.value;
+
+    if (values.includes(this.allOption)) {
+      this.versionsControl.patchValue(
+        values.filter((v) => v !== this.allOption)
+      );
+    } else if (values.length == this.state.allAngularVersions.length) {
+      this.versionsControl.patchValue([
+        this.allOption,
+        ...this.state.allAngularVersions,
+      ]);
+    } else {
+      this.versionsControl.patchValue(values);
+    }
   }
 }
