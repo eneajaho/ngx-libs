@@ -42,6 +42,9 @@
         "libraryVersion": "v18.0.0",
         "support": true,
         "link": "https://github.com/scttcper/ngx-toastr/releases/tag/v18.0.0"
+      },
+      "18": {
+        "support": "partial"
       }
     },
     "automated": true
@@ -84,6 +87,9 @@
         "link": "https://github.com/rx-angular/rx-angular/releases/tag/state%4016.0.0"
       },
       "17": {
+        "support": "partial"
+      },
+      "18": {
         "support": "partial"
       }
     },
@@ -132,6 +138,9 @@
       },
       "17": {
         "support": "partial"
+      },
+      "18": {
+        "support": "partial"
       }
     },
     "automated": true
@@ -174,6 +183,11 @@
         "link": "https://github.com/ng-matero/extensions/releases/tag/v16.0.0"
       },
       "17": {
+        "libraryVersion": "v16.3.7",
+        "support": true,
+        "link": "https://github.com/ng-matero/extensions/releases/tag/v16.3.7"
+      },
+      "18": {
         "support": "partial"
       }
     },
@@ -234,6 +248,11 @@
         "libraryVersion": "v12.0.1",
         "support": true,
         "link": "https://github.com/ng-select/ng-select/releases/tag/v12.0.1"
+      },
+      "18": {
+        "libraryVersion": "v13.0.0",
+        "support": true,
+        "link": "https://github.com/ng-select/ng-select/releases/tag/v13.0.0"
       }
     },
     "automated": true
@@ -347,6 +366,9 @@
         "link": "https://github.com/valor-software/ngx-bootstrap/releases/tag/v11.0.0"
       },
       "17": {
+        "support": "partial"
+      },
+      "18": {
         "support": "partial"
       }
     },
@@ -463,6 +485,11 @@
         "link": "https://github.com/ngx-formly/ngx-formly/releases/tag/v6.0.0"
       },
       "17": {
+        "libraryVersion": "v6.3.0",
+        "support": true,
+        "link": "https://github.com/ngx-formly/ngx-formly/releases/tag/v6.3.0"
+      },
+      "18": {
         "support": "partial"
       }
     },
@@ -510,6 +537,9 @@
         "libraryVersion": "v26.0.0",
         "support": true,
         "link": "https://github.com/ng-icons/ng-icons/releases/tag/v26.0.0"
+      },
+      "18": {
+        "support": "partial"
       }
     },
     "automated": true
@@ -565,6 +595,11 @@
         "link": "https://github.com/Napster2210/ngx-spinner/releases/tag/v16"
       },
       "17": {
+        "libraryVersion": "v17",
+        "support": true,
+        "link": "https://github.com/Napster2210/ngx-spinner/releases/tag/v17"
+      },
+      "18": {
         "support": "partial"
       }
     },
@@ -621,6 +656,9 @@
         "link": "https://github.com/primefaces/primeng/releases/tag/16.0.2"
       },
       "17": {
+        "support": "partial"
+      },
+      "18": {
         "support": "partial"
       }
     },
@@ -686,6 +724,9 @@
       },
       "17": {
         "support": "partial"
+      },
+      "18": {
+        "support": "partial"
       }
     },
     "automated": true
@@ -732,6 +773,9 @@
       },
       "17": {
         "support": "partial"
+      },
+      "18": {
+        "support": "partial"
       }
     },
     "automated": true
@@ -741,6 +785,12 @@
     "npmUrl": "https://www.npmjs.com/package/ngx-mask",
     "githubUrl": "https://github.com/JsDaddy/ngx-mask",
     "versionSupport": {
+      "10": {
+        "support": false
+      },
+      "11": {
+        "support": false
+      },
       "12": {
         "libraryVersion": "12.0.0",
         "support": true,
@@ -765,9 +815,15 @@
         "libraryVersion": "16.2.5",
         "support": true,
         "link": "https://github.com/JsDaddy/ngx-mask/blob/develop/CHANGELOG.md#16252023-07-24"
+      },
+      "17": {
+        "support": "partial"
+      },
+      "18": {
+        "support": "partial"
       }
     },
-    "automated": false
+    "automated": true
   },
   {
     "name": "ngx-cookie-service",
@@ -809,6 +865,11 @@
         "libraryVersion": "v17.0.0",
         "support": true,
         "link": "https://github.com/stevermeister/ngx-cookie-service/releases/tag/v17.0.0"
+      },
+      "18": {
+        "libraryVersion": "v18.0.0",
+        "support": true,
+        "link": "https://github.com/stevermeister/ngx-cookie-service/releases/tag/v18.0.0"
       }
     },
     "automated": true
@@ -848,6 +909,9 @@
         "link": "https://github.com/orizens/ngx-infinite-scroll/blob/master/projects/ngx-infinite-scroll/CHANGELOG.md#v-1600-20230515"
       },
       "17": {
+        "support": "partial"
+      },
+      "18": {
         "support": "partial"
       }
     },
@@ -922,6 +986,9 @@
         "libraryVersion": "15.1.2",
         "support": true,
         "link": "https://github.com/ng-bootstrap/ng-bootstrap/releases/tag/15.1.2"
+      },
+      "18": {
+        "support": "partial"
       }
     },
     "automated": true
@@ -990,6 +1057,11 @@
         "libraryVersion": "0.14.0",
         "support": true,
         "link": "https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.14.0"
+      },
+      "18": {
+        "libraryVersion": "0.15.0",
+        "support": true,
+        "link": "https://github.com/FortAwesome/angular-fontawesome/releases/tag/0.15.0"
       }
     },
     "automated": true
@@ -1038,6 +1110,9 @@
         "libraryVersion": "15.0.0",
         "support": true,
         "link": "https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v15.0.0"
+      },
+      "18": {
+        "support": "partial"
       }
     },
     "automated": true
@@ -1133,6 +1208,9 @@
         "libraryVersion": "v7.0.0",
         "support": true,
         "link": "https://github.com/AhsanAyaz/ngx-device-detector/releases/tag/v7.0.0"
+      },
+      "18": {
+        "support": "partial"
       }
     },
     "automated": true
@@ -1177,6 +1255,11 @@
         "libraryVersion": "v17.0.0",
         "support": true,
         "link": "https://github.com/xieziyu/ngx-echarts/releases/tag/v17.0.0"
+      },
+      "18": {
+        "libraryVersion": "v18.0.0",
+        "support": true,
+        "link": "https://github.com/xieziyu/ngx-echarts/releases/tag/v18.0.0"
       }
     },
     "automated": true
@@ -1251,6 +1334,9 @@
         "libraryVersion": "v14.12.0",
         "support": true,
         "link": "https://github.com/help-me-mom/ng-mocks/releases/tag/v14.12.0"
+      },
+      "18": {
+        "support": "partial"
       }
     },
     "automated": true
@@ -1357,6 +1443,9 @@
       },
       "17": {
         "support": "partial"
+      },
+      "18": {
+        "support": "partial"
       }
     },
     "automated": true
@@ -1398,6 +1487,9 @@
         "link": "https://github.com/danrevah/ngx-pipes/blob/master/CHANGELOG.md#322-2023-05-07"
       },
       "17": {
+        "support": "partial"
+      },
+      "18": {
         "support": "partial"
       }
     },
@@ -1458,6 +1550,9 @@
         "libraryVersion": "v15.0.0",
         "support": true,
         "link": "https://github.com/testing-library/angular-testing-library/releases/tag/v15.0.0"
+      },
+      "18": {
+        "support": "partial"
       }
     },
     "automated": true
@@ -1494,6 +1589,9 @@
         "support": "partial"
       },
       "17": {
+        "support": "partial"
+      },
+      "18": {
         "support": "partial"
       }
     },
@@ -1587,6 +1685,11 @@
         "libraryVersion": "v17.0.0",
         "support": true,
         "link": "https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v17.0.0"
+      },
+      "18": {
+        "libraryVersion": "v18.0.0",
+        "support": true,
+        "link": "https://github.com/tiberiuzuld/angular-gridster2/releases/tag/v18.0.0"
       }
     },
     "automated": true
@@ -1643,6 +1746,11 @@
       },
       "17": {
         "support": "partial"
+      },
+      "18": {
+        "libraryVersion": "18.0.0",
+        "support": true,
+        "link": "https://github.com/angular/angularfire/releases/tag/18.0.0"
       }
     },
     "automated": true
@@ -1700,6 +1808,9 @@
         "link": "https://github.com/kolkov/angular-editor/releases/tag/v2.1.0"
       },
       "17": {
+        "support": "partial"
+      },
+      "18": {
         "support": "partial"
       }
     },
@@ -1832,6 +1943,9 @@
         "libraryVersion": "4.7.0",
         "support": true,
         "link": "https://github.com/coreui/coreui-angular/releases/tag/4.7.0"
+      },
+      "18": {
+        "support": "partial"
       }
     },
     "automated": true
@@ -1879,9 +1993,16 @@
         "link": "https://github.com/angular-split/angular-split/pull/341"
       },
       "16": {
-        "support": "partial"
+        "libraryVersion": "angular-split-v17.2.0",
+        "support": true,
+        "link": "https://github.com/angular-split/angular-split/releases/tag/angular-split-v17.2.0"
       },
       "17": {
+        "libraryVersion": "angular-split-v17.2.0",
+        "support": true,
+        "link": "https://github.com/angular-split/angular-split/releases/tag/angular-split-v17.2.0"
+      },
+      "18": {
         "support": "partial"
       }
     },
@@ -1983,6 +2104,9 @@
         "link": "https://github.com/katoid/angular-grid-layout/releases/tag/v2.2.0"
       },
       "17": {
+        "support": "partial"
+      },
+      "18": {
         "support": "partial"
       }
     },
