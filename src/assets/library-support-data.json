@@ -44,7 +44,9 @@
         "link": "https://github.com/scttcper/ngx-toastr/releases/tag/v18.0.0"
       },
       "18": {
-        "support": "https://github.com/scttcper/ngx-toastr/tree/v19.0.0"
+        "libraryVersion": "v19.0.0",
+        "support": true,
+        "link": "https://github.com/scttcper/ngx-toastr/releases/tag/v19.0.0"
       }
     },
     "automated": true
@@ -87,10 +89,14 @@
         "link": "https://github.com/rx-angular/rx-angular/releases/tag/state%4016.0.0"
       },
       "17": {
-        "support": "partial"
+        "libraryVersion": "17.0.0",
+        "support": true,
+        "link": "https://github.com/rx-angular/rx-angular/releases/tag/state%4017.0.0"
       },
       "18": {
-        "support": "partial"
+        "libraryVersion": "18.0.0",
+        "support": true,
+        "link": "https://github.com/rx-angular/rx-angular/releases/tag/state%4018.0.0"
       }
     },
     "automated": true
