@@ -44,7 +44,7 @@
         "link": "https://github.com/scttcper/ngx-toastr/releases/tag/v18.0.0"
       },
       "18": {
-        "support": "partial"
+        "support": "https://github.com/scttcper/ngx-toastr/tree/v19.0.0"
       }
     },
     "automated": true
