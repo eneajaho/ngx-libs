@@ -31,7 +31,7 @@ To edit an **existing** library, please refer to [Manual](#manual)
 
 If you want to add a library, please create a pull request with the following changes:
 
-- Add the library to the `libs.data.ts` file
+- Add the library to the `/src/assets/library-support-data.json` file
 
 ## How to run locally
 
