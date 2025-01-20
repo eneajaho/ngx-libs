@@ -1,4 +1,4 @@
-export const ANGULAR_VERSIONS = [18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8];
+export const ANGULAR_VERSIONS = [19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8];
 
 export interface LibrarySupport {
   name: string; // name of the library (e.g. @rx-angular/isr)

@@ -1128,7 +1128,14 @@
         "link": "https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v15.0.0"
       },
       "18": {
-        "support": "partial"
+        "libraryVersion": "16.0.0",
+        "support": true,
+        "link": "https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v16.0.0"
+      },
+      "19": {
+        "libraryVersion": "19.0.0",
+        "support": true,
+        "link": "https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v19.0.0"
       }
     },
     "automated": true
