@@ -425,6 +425,11 @@
         "libraryVersion": "19.0.0",
         "support": true,
         "link": "https://github.com/PerfectMemory/ngx-contextmenu/releases/tag/v19.0.0"
+      },
+      "20": {
+        "libraryVersion": "20.0.0",
+        "support": true,
+        "link": "https://github.com/PerfectMemory/ngx-contextmenu/releases/tag/v20.0.0"
       }
     },
     "automated": false
